@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full 7-Week Training Plan</title>
+    <title>Dynamic Training Plan</title>
     <style>
+        .plan-controls {
+            text-align: center;
+            margin-bottom: 2em;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        .plan-controls label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .plan-controls input[type="number"] {
+            width: 80px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .plan-controls button {
+            padding: 6px 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .plan-controls button:hover {
+            background-color: #2980b9;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
@@ -148,7 +176,13 @@
 <body>
 
     <div class="container">
-        <h1>Full 7-Week Training Plan</h1>
+        <h1>Dynamic Training Plan</h1>
+
+        <div class="plan-controls">
+            <label for="total-weeks">Total Weeks in Plan:</label>
+            <input type="number" id="total-weeks" value="7" min="7">
+            <button id="generate-plan-btn">Generate Plan</button>
+        </div>
 
         <div class="warmup-section">
             <h2 data-heading="**General Warm-Up Routine (Approx. 15-20 Minutes)**">General Warm-Up Routine (Approx. 15-20 Minutes)</h2>
@@ -260,7 +294,7 @@
         <hr>
 
         <div class="program-overview">
-            <h2 data-heading="**7-Week Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)**">7-Week Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)</h2>
+            <h2 data-heading="**Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)**">Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)</h2>
             <p><strong>Note:</strong> All drills are sourced from <code>TotalTrackandFieldTrainingWorkouts1107.pdf</code> (T1), <code>EssentialTrackandFieldDrills955.pdf</code> (E1), or <code>TotalTrackandFieldTraining1225.pdf</code> (T2).</p>
             <div class="table-container">
                 <table>
@@ -277,7 +311,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td align="left"><strong>P1: GPP</strong> (Wk 1-2)</td>
+                            <td align="left" id="phase1-gpp"><strong>P1: GPP</strong> (Wk 1-2)</td>
                             <td align="left"><strong>Elementary Sprinters</strong></td>
                             <td align="left" data-details-file="p1_elem_day1.md"><strong>Acceleration Foundation:</strong><br>• Falling Runs (T1)<br>• 3-Point Starts (no blocks)<br>• 10-20m Sprints</td>
                             <td align="left" data-details-file="p1_elem_day2.md"><strong>General Endurance:</strong><br>• Keep the Pace Drill (E1)<br>• Frame as a whistle game on a field</td>
@@ -331,7 +365,7 @@
                             <td align="left" data-details-file="p1_sec_throw_day5.md"><strong>Active Recovery/Coordination:</strong><br>• Overhead Basketball Throw (E1) (use soccer/volleyball)<br>• Stretching</td>
                         </tr>
                         <tr>
-                            <td align="left"><strong>P2: SPP</strong> (Wk 3-5)</td>
+                            <td align="left" id="phase2-spp"><strong>P2: SPP</strong> (Wk 3-5)</td>
                             <td align="left"><strong>Elementary Sprinters</strong></td>
                             <td align="left"><strong>Acceleration Development:</strong><br>• 3-Point Starts to 20m<br>• Get Ups (from push-up pos.) (T1)</td>
                             <td align="left"><strong>Speed Endurance Foundation:</strong><br>• "Cut-Down" Sprints on field<br>(e.g., 80m-60m-40m)</td>
@@ -385,7 +419,7 @@
                             <td align="left"><strong>Recovery & Technical Refine:</strong><br>• Drills (Pivoting, etc.)<br>• Stretching, visualization</td>
                         </tr>
                         <tr>
-                            <td align="left"><strong>P3: Competition</strong> (Wk 6-7)</td>
+                            <td align="left" id="phase3-comp"><strong>P3: Competition</strong> (Wk 6-7)</td>
                             <td align="left"><strong>All Groups (Secondary)</strong></td>
                             <td align="left"><strong>Race Simulation/Tune-Up:</strong><br>• <strong>Sprints:</strong> 2-3 x 40m @ 95% from 3-pt start<br>• <strong>Jumps:</strong> 3-4 full approaches on runway<br>• <strong>Mid-D:</strong> 2 x 200m @ goal race pace<br>• <strong>Long-D:</strong> 2-3 x 800m @ goal pace<br>• <strong>Throwers:</strong> 4-5 high-quality throws</td>
                             <td align="left"><strong>Full Recovery:</strong><br>• Off day or very light walk and stretch</td>
@@ -454,6 +488,40 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const totalWeeksInput = document.getElementById('total-weeks');
+            const generatePlanBtn = document.getElementById('generate-plan-btn');
+            const phase1Cell = document.getElementById('phase1-gpp');
+            const phase2Cell = document.getElementById('phase2-spp');
+            const phase3Cell = document.getElementById('phase3-comp');
+
+            const calculateAndDisplayPlan = () => {
+                const totalWeeks = parseInt(totalWeeksInput.value, 10);
+                if (isNaN(totalWeeks) || totalWeeks < 7) {
+                    alert("Please enter a number of 7 or greater for the total weeks.");
+                    return;
+                }
+
+                // New logic based on periodization principles
+                const p3_duration = Math.min(2, Math.round(totalWeeks * 0.25)); // Cap competition phase at 2 weeks or 25% for shorter plans
+                const preparatoryPeriod = totalWeeks - p3_duration;
+                const p1_duration = Math.round(preparatoryPeriod * 0.4);
+                const p2_duration = preparatoryPeriod - p1_duration;
+
+                const p1_end = p1_duration;
+                const p2_start = p1_end + 1;
+                const p2_end = p2_start + p2_duration - 1;
+                const p3_start = p2_end + 1;
+                const p3_end = totalWeeks;
+
+                phase1Cell.innerHTML = `<strong>P1: GPP</strong> (Wk 1-${p1_end})`;
+                phase2Cell.innerHTML = `<strong>P2: SPP</strong> (Wk ${p2_start}-${p2_end})`;
+                phase3Cell.innerHTML = `<strong>P3: Competition</strong> (Wk ${p3_start}-${p3_end})`;
+            };
+
+            generatePlanBtn.addEventListener('click', calculateAndDisplayPlan);
+            // Initial calculation on page load
+            calculateAndDisplayPlan();
+
             const modal = document.getElementById('details-modal');
             const modalBody = document.getElementById('modal-body-content');
             const closeButton = document.querySelector('.close-button');
