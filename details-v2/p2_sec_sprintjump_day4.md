@@ -1,23 +1,23 @@
-# Day 4: General Strength & Mobility
+# Day 4: Event-Specific Strength
 
 **Group:** Secondary Sprint-Jump (LJ/TJ)
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building functional, total-body strength and core stability using bodyweight exercises.
+To build the specific strength and power needed for high-level jumping. These exercises are more intense and directly target the muscles and movements used in the takeoff and flight phases.
 
 ### Drills:
 
-1.  **Bodyweight Circuit (Squats, Lunges):**
-    *   **Purpose:** To build lower body strength, which is the engine for sprinting and jumping.
-    *   **Execution (Squats):** Stand with feet shoulder-width apart. Lower your hips back and down as if sitting in a chair, keeping your chest up and back straight. Go as low as you can comfortably, then drive back up to the starting position.
-    *   **Execution (Lunges):** Step forward with one leg and lower your hips until both knees are bent at a 90-degree angle. Ensure your front knee is directly above your ankle. Push off the front foot to return to the start, then repeat with the other leg.
-    *   **Sets/Reps:** 3 sets of 10-15 reps for each exercise.
+1.  **Depth Jumps (from low box) (T1):**
+    *   **Purpose:** This is an advanced plyometric drill that creates a powerful stretch-reflex in the leg muscles, significantly improving vertical explosive power. It's a more intense version of the Box Drop.
+    *   **Execution:** The athlete stands on a low, sturdy box (start with 12 inches and progress slowly). They step off the box, land on both feet, and immediately explode into a maximal jump onto a higher box or simply for maximum vertical height. The focus is on minimizing ground contact time and maximizing the upward explosion.
+    *   **Sets/Reps:** 2-3 sets of 4-5 jumps. This is a high-intensity exercise, so quality and full recovery are more important than volume.
+    *   **Coaching Cues:** "Be quick off the floor," "Absorb and explode," "Jump as high as you can," "Land softly on the way down."
 
-2.  **Core: V-Sits & Supermans (T1 / T2, pg. 58, 61):**
-    *   **Purpose:** To develop a strong, stable core, which is critical for transferring force from the lower body to the upper body.
-    *   **Execution (V Sit Ups):** Lie on your back. With hands across your chest, bring your knees and chest up at the same time, forming a "V" shape. Extend back out, but keep your shoulder blades and feet off the ground.
-    *   **Execution (Supermans):** Lie flat on your stomach. Lift your arms, chest, and legs up at the same time. Hold for about two seconds, then lower back down under control.
-    *   **Sets/Reps:** 3 sets of 10-15 reps for V-Sits. 3 sets of 10-20 reps for Supermans.
+2.  **Quarter Eagles (T2):**
+    *   **Purpose:** To develop quick, explosive hip rotation and balance. This is especially useful for jumpers who need to control their body's rotation during flight and landing.
+    *   **Execution:** The athlete stands in an athletic, semi-squat position with arms out for balance. They jump with both feet, rotating their hips and feet a quarter turn (90 degrees) to one side, and then immediately jump back to the center. They then repeat the movement to the opposite side.
+    *   **Sets/Reps:** 3 sets of 5-6 repetitions (one rep consists of a jump to the right, back to center, to the left, and back to center).
+    *   **Coaching Cues:** "Stay light on your feet," "Keep your chest up," "Rotate with your hips, not your shoulders," "Quick, quick, quick!"

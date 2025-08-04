@@ -1,23 +1,17 @@
-# Day 2: General Endurance
+# Day 2: Speed Endurance Foundation
 
 **Group:** Elementary Sprinters
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building a basic level of endurance in a fun and engaging way. This helps with recovery between sprints and builds overall fitness.
+To introduce the concept of speed endurance by running sprints of decreasing distance. This helps young athletes learn to maintain a high level of effort and finish strong through fatigue.
 
 ### Drills:
 
-1.  **Keep the Pace Drill (E1):**
-    *   **Purpose:** To develop a sense of pace and improve aerobic capacity.
-    *   **Execution:** This is best framed as a game. The coach blows a whistle, and the athletes have to run from one side of a field to the other (e.g., 50-60 meters) before the next whistle blows. The interval between whistles should be consistent (e.g., every 20 seconds).
-    *   **Sets/Reps:** Run for a set duration, for example, 2 sets of 5 minutes with a 3-minute rest in between.
-    *   **Coaching Cues:** "Run smooth and relaxed," "Don't start too fast," "Listen for the whistle!"
-
-2.  **Whistle Game on a Field:**
-    *   **Purpose:** A variation of the above that is less structured and more reactive.
-    *   **Execution:** Athletes jog around a field. When the coach blows the whistle once, they have to sprint for 30 meters. When the coach blows the whistle twice, they have to jog back to the starting point.
-    *   **Sets/Reps:** Continue for 8-10 minutes.
-    *   **Coaching Cues:** "Always be ready," "Listen carefully," "Have fun with it."
+1.  **"Cut-Down" Sprints on Field:**
+    *   **Purpose:** To teach pacing and the ability to maintain quality sprint form even when tired. The decreasing distance allows for high-quality repetitions.
+    *   **Execution:** Mark off distances of 80m, 60m, and 40m on a field. The athlete sprints 80m at a strong, controlled pace (around 90-95% effort). After a full recovery walk back, they sprint 60m, and after another full recovery, they sprint the final 40m at maximum effort.
+    *   **Sets/Reps:** 1-2 sets of the 80-60-40m sequence. Full recovery (walking back to the start and resting for 2-3 minutes) is crucial between each sprint.
+    *   **Coaching Cues:** "Run tall and relaxed on the 80," "Stay strong through the 60," "Explode and finish fast on the 40!"

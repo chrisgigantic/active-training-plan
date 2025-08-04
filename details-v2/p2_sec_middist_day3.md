@@ -1,22 +1,20 @@
-# Day 3: Aerobic Power
+# Day 3: Lactate Tolerance
 
 **Group:** Secondary Mid-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Developing the ability to run at a strong pace with short recovery periods, which is key for middle-distance events.
+To improve the body's ability to tolerate and perform under high levels of lactic acid. This type of training is mentally and physically tough and is critical for developing a strong finishing kick in the 800m and 1500m.
 
 ### Drills:
 
-1.  **Flying Bears Drill (E1, pg. 18):**
-    *   **Purpose:** A series of sprints and jogs that helps to maintain speed development during the season.
-    *   **Execution:** This drill is a continuous run with changing paces.
-        *   Run at 75% effort for the first 100m.
-        *   Jog for 50m for recovery.
-        *   Sprint for another 100m.
-        *   Jog for another 50m.
-        *   Finish with a final 100m sprint at 100% effort.
-    *   **Sets/Reps:** 2-3 full repetitions of the 400m sequence.
-    *   **Coaching Cues:** "During the jogs, maintain a relaxed posture and consistent stride," "Focus on good running technique throughout," "The key is to maintain good sprinting fundamentals on each 100m run."
+1.  **Same Time Drill (E1):**
+    *   **Purpose:** To challenge the anaerobic system by forcing the athlete to run progressively longer distances in the same amount of time. This requires a significant increase in speed and power output with each repetition, building immense lactate tolerance.
+    *   **Execution:** Mark off distances of 40m, 50m, and 60m. The coach sets a challenging but achievable time (e.g., 7 seconds).
+        *   First, the athlete sprints 40m, aiming to meet the target time. They then have a walk-back recovery.
+        *   Next, they sprint 50m, aiming for the *same* target time. This requires a faster average speed. Walk-back recovery.
+        *   Finally, they sprint 60m, again aiming for the *same* target time, requiring their fastest speed yet.
+    *   **Sets/Reps:** 2-3 full sets (40m, 50m, 60m) with full recovery (4-5 minutes) between each set.
+    *   **Coaching Cues:** "Explode on the first run," "You have to be faster on the second, drive your arms," "Last one is all out, give it everything you have!"

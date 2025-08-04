@@ -1,20 +1,17 @@
-# Day 3: Max Velocity Mechanics
+# Day 3: Maximum Velocity
 
 **Group:** Secondary Sprinters
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Developing the ability to run at top speed while staying relaxed, a key component of efficient sprinting.
+To develop and improve top-end speed. This session is about hitting the highest possible velocity and teaching the body to be efficient and relaxed while doing so.
 
 ### Drills:
 
-1.  **Burst and Relax Drill (E1, pg. 6):**
-    *   **Purpose:** To build a foundation for relaxed top-speed running.
-    *   **Execution:** This drill is run over a 60-meter section of the track, broken into three 20-meter segments.
-        *   **First 20m:** Full speed acceleration (the "burst").
-        *   **Middle 20m:** Transition to an easy, relaxed, but fast run, focusing on maintaining momentum without straining (the "float" or "relax").
-        *   **Final 20m:** Re-accelerate back to full speed.
-    *   **Sets/Reps:** 4-6 repetitions with full recovery.
-    *   **Coaching Cues:** "The middle section is key; stay relaxed," "Feel the difference between straining and floating," "Don't lose your speed in the float."
+1.  **Increase Acceleration Drill (E1):**
+    *   **Purpose:** To specifically train the ability to accelerate once already at a high velocity, a key component of a strong 100m or 200m race. It combats the natural tendency to decelerate in the latter half of a sprint.
+    *   **Execution:** The athlete will run a 100-meter sprint. The first 50 meters are performed at a fast, yet controlled, 90-95% effort. At the 50-meter mark, the athlete receives a cue (visual or auditory) and consciously increases their effort to 100%, focusing on driving their arms and legs more powerfully to accelerate through the finish line.
+    *   **Sets/Reps:** 3-4 repetitions with very long recovery periods (5-6 minutes) to ensure the nervous system and muscles are fully recovered for a maximal effort on each repetition.
+    *   **Coaching Cues:** "Build up your speed to the cone," "At the cone, shift into your top gear," "Finish the race faster and stronger than you started," "Stay relaxed at top speed."

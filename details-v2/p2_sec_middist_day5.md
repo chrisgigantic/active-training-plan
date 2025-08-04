@@ -1,24 +1,23 @@
-# Day 5: Active Recovery & Form
+# Day 5: Active Recovery & Strides
 
 **Group:** Secondary Mid-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Promoting recovery with a light run while reinforcing efficient running mechanics.
+To facilitate recovery from the week's harder sessions while maintaining a feel for faster, more efficient running mechanics. This session is light and designed to help the body adapt and prepare for the next training block.
 
-### Drills:
+### Activity:
 
 1.  **Easy Run:**
-    *   **Purpose:** To facilitate recovery, increase blood flow to the muscles, and add to the weekly mileage base without adding significant stress.
-    *   **Execution:** A short, very easy run at a conversational pace.
-    *   **Sets/Reps:** 15-20 minutes continuous.
+    *   **Purpose:** To increase blood flow, aid in the removal of metabolic byproducts, and promote muscle repair without adding significant training stress.
+    *   **Execution:** A 15-20 minute run at a very low intensity. The pace should be easy and conversational, allowing the body to recover.
+    *   **Sets/Reps:** One continuous 15-20 minute run.
+    *   **Coaching Cues:** "Keep it relaxed and comfortable," "Just shake out the legs," "Listen to your body."
 
-2.  **Fast Leg Run Drill (T1 / T2, pg. 37):**
-    *   **Purpose:** To improve neuromuscular coordination and practice a quick, efficient leg cycle.
-    *   **Execution:** While jogging forward, alternate between a slow jogging motion and a "fast leg" step. The fast leg is an exaggerated running motion with one leg, bringing the knee up to waist height, pulling the heel into your rear end, and quickly dropping it back down.
-    *   **Progression:**
-        *   **Beginner:** Fast leg every 8th step, using the same leg. Switch legs on the next repetition.
-        *   **Intermediate:** Fast leg every 5th step, alternating legs.
-    *   **Sets/Reps:** 2-3 repetitions over 30-40 yards.
+2.  **Strides on Field:**
+    *   **Purpose:** To touch upon faster running and reinforce good mechanics without being a taxing workout. Strides help maintain neuromuscular coordination for speed and efficiency.
+    *   **Execution:** After the easy run, the athlete performs 4-6 strides over 80-100 meters on a flat, grassy field. A stride is a gradual acceleration to about 85-90% of maximum speed, holding that for a short period, and then gradually decelerating. The focus is on feeling smooth, fast, and relaxed.
+    *   **Sets/Reps:** 4-6 repetitions of 80-100m strides with a full walk-back recovery between each.
+    *   **Coaching Cues:** "Run tall and smooth," "Let the speed come to you, don't force it," "Feel light on your feet."

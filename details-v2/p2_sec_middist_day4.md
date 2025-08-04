@@ -1,23 +1,25 @@
-# Day 4: General Strength & Core
+# Day 4: Strength & Power
 
 **Group:** Secondary Mid-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building essential full-body strength and a robust core to improve running economy and prevent injury.
+To develop the power and strength necessary for a strong finishing kick and for maintaining form when fatigued. This session incorporates plyometrics for explosiveness and drills for body control.
 
 ### Drills:
 
-1.  **Bodyweight Circuit (Squats, Lunges):**
-    *   **Purpose:** To build lower body and glute strength, which provides the power for an efficient stride.
-    *   **Execution (Squats):** Stand with feet shoulder-width apart. Lower your hips back and down, keeping your chest up.
-    *   **Execution (Lunges):** Step forward and lower your hips until both knees are at a 90-degree angle. Push back to the start and alternate legs.
-    *   **Sets/Reps:** 3 sets of 15-20 reps for each exercise.
+1.  **Obstacle Jumps (over cones) (T1):**
+    *   **Purpose:** To develop reactive strength and power in a controlled manner. Jumping over obstacles improves the stretch-shortening cycle of the leg muscles, leading to a more powerful stride.
+    *   **Execution:** Set up a series of 5-8 low cones or hurdles, about 3-4 feet apart. The athlete jumps over them continuously. Variations include:
+        *   **Two-Foot Jumps:** Jumping with both feet together.
+        *   **Single-Leg Hops:** Hopping over the obstacles on one leg, then switching to the other.
+    *   **Sets/Reps:** 2-3 sets of each variation (two-foot, right leg, left leg).
+    *   **Coaching Cues:** "Be quick and light off the ground," "Don't spend a lot of time on the floor," "Use your arms to help you jump."
 
-2.  **Core Circuit (Pillars, Side Pillars, Leg Lifts) (T2, pg. 59, 62):**
-    *   **Purpose:** To develop 360-degree core stability.
-    *   **Execution (Pillars/Side Pillars):** Hold a standard front plank (on elbows) and then a plank on each side. Keep the body in a straight line.
-    *   **Execution (Leg Lifts):** Lie on your back. Lift your legs off the ground and hold them in the air. For more difficulty, put your arms over your chest.
-    *   **Sets/Reps:** 3 sets: Hold each pillar for 30-45 seconds. Hold leg lifts for 15-20 seconds.
+2.  **Linear Run & Stick (T2):**
+    *   **Purpose:** To improve an athlete's ability to decelerate and control their body, which is crucial for navigating a crowded track and for developing the stability needed for a powerful final kick.
+    *   **Execution:** The athlete runs forward at a good pace for 10-15 meters and then, on a signal, comes to a complete stop as quickly as possible, "sticking" the landing on one foot and holding the position for 2-3 seconds without losing balance.
+    *   **Sets/Reps:** 3-4 sets of 4-5 repetitions, alternating the "stick" leg.
+    *   **Coaching Cues:** "Stop on a dime," "Sink your hips to stop," "Stay strong and balanced, don't wobble."

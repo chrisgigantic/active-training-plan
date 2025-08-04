@@ -1,29 +1,20 @@
-# Day 5: Active Recovery & Skill 2 (Sprints)
+# Day 5: Event-Specific Tech (Sprints)
 
 **Group:** Secondary Sprint-Jump (LJ/TJ)
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Reinforcing fundamental sprint mechanics through low-intensity drills to aid recovery and build muscle memory.
+To refine the acceleration phase of the sprint, which is the foundation of a successful jump. This session breaks down the start into different distances to ensure a powerful and technically sound drive phase.
 
 ### Drills:
 
-1.  **A-March Drill (E1, pg. 14):**
-    *   **Purpose:** To develop proper hurdling technique and rhythm, which also translates to good sprint posture.
-    *   **Execution:** This is a walking drill. March forward, lifting the lead knee high and extending the toe. The action simulates the "climbing" motion over a hurdle. Exaggerate each movement.
-    *   **Sets/Reps:** 2-3 repetitions over 20-30 meters.
-    *   **Coaching Cues:** "High knees, toes up," "Exaggerate the movement," "Stay tall."
-
-2.  **Step Over Drill (Jogging) (T1 / T2, pg. 36):**
-    *   **Purpose:** To develop an active, cyclical leg action while in motion.
-    *   **Execution:** Perform the "step over" motion (pulling the toe up and stepping over the opposite ankle) while jogging forward. The focus is on maintaining the cyclical action while moving at a light pace.
-    *   **Sets/Reps:** 2-3 repetitions over 20-30 meters.
-    *   **Coaching Cues:** "Keep the rhythm," "Don't reach with your feet," "Bounce off the ground."
-
-3.  **Drop Skip (T1 / T2, pg. 13):**
-    *   **Purpose:** To loosen the hips for more explosive movement.
-    *   **Execution:** This drill is performed moving backward. As you take a step backward, bring the opposite knee up and out, then skip. Alternate legs.
-    *   **Sets/Reps:** 2-3 repetitions over 10-20 yards.
-    *   **Coaching Cues:** "Knee up, toe up," "Step down explosively," "Keep your core solid."
+1.  **Block Start Intervals (from 3-pt) (E1):**
+    *   **Purpose:** To develop a consistent and explosive start, focusing on maintaining a powerful body lean and drive through the initial stages of the sprint. Practicing at different distances helps solidify the technique.
+    *   **Execution:** The athlete uses a 3-point stance (or blocks if available and proficient). The focus is on a powerful, clean exit.
+        *   **10m Starts:** The goal is pure, explosive power. The athlete should focus on pushing hard and staying low for the entire 10 meters.
+        *   **20m Starts:** The athlete works on transitioning slightly from the initial drive phase towards a more upright posture, but still maintaining strong acceleration.
+        *   **30m Starts:** This distance requires the athlete to begin moving into their max velocity mechanics, smoothly transitioning from the start into a full sprint.
+    *   **Sets/Reps:** 2-3 sets of (1x10m, 1x20m, 1x30m). Full recovery (2-3 minutes) should be taken between each start to ensure maximum quality and power.
+    *   **Coaching Cues:** "Explode out of the blocks," "Keep your head down and drive," "Push, push, push," "Powerful arms, powerful legs."

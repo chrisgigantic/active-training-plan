@@ -1,23 +1,23 @@
-# Day 2: Rotational Power & Drills
+# Day 2: Event-Specific Power
 
 **Group:** Secondary Throwers
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Learning the proper release of the discus and building the foundational throwing motion from a static position.
+To translate foundational strength into event-specific throwing power. This session focuses on the mechanics of the release and achieving the optimal trajectory for the implement.
 
 ### Drills:
 
-1.  **Bowling Release Drill (E1, pg. 42):**
-    *   **Purpose:** To learn the proper release and rotation of the discus.
-    *   **Execution:** With a proper grip, the thrower takes a three-step approach to a line and "bowls" the discus ahead of them. A good release is indicated by the discus rolling for a long distance on its edge.
-    *   **Sets/Reps:** 10-15 repetitions.
-    *   **Coaching Cues:** "The release should come off the index finger," "The thumb should be on top of the discus."
+1.  **Standing Javelin Throw (E1) (use stick):**
+    *   **Purpose:** To practice the correct sequence of the throwing motion from a static position, focusing on the powerful hip turn and arm strike. Using a light stick allows for many repetitions without excessive fatigue.
+    *   **Execution:** The athlete stands with their non-throwing side foot forward. Holding a stick with a javelin grip, they extend the stick straight back. The throwing motion is initiated by turning the hips and torso aggressively towards the front, followed by the arm striking forward and releasing the stick.
+    *   **Sets/Reps:** 3-4 sets of 8-10 throws.
+    *   **Coaching Cues:** "Hips first, then arm," "Keep the stick's tip close to your eyebrow," "Throw through the point."
 
-2.  **Standing Release Drill (E1, pg. 42):**
-    *   **Purpose:** To build muscle memory for the throwing motion and perfect the release technique from a standing position.
-    *   **Execution:** This is not a full throw. The thrower starts with the discus brought back and up, with the body slightly coiled at the waist. From this position, the thrower turns their hips forward towards the target and releases the discus, focusing on an "outside edge up" toss.
-    *   **Sets/Reps:** 10-15 repetitions.
-    *   **Coaching Cues:** "Power comes from the hips and legs, but flight comes from the upper body," "Focus on the feeling of the release."
+2.  **Obstacle Release Drill (E1) (use cone):**
+    *   **Purpose:** To develop a consistent and optimal release angle for the shot put. Throwing over an obstacle forces the athlete to achieve the necessary height on the implement for maximum distance.
+    *   **Execution:** Place a cone or other low obstacle about 10-15 feet in front of the thrower. From a standing throw position, the athlete executes a throw, focusing on releasing the shot put at an angle that allows it to travel up and over the obstacle. The ideal trajectory is around 40-45 degrees.
+    *   **Sets/Reps:** 3-4 sets of 5-6 throws.
+    *   **Coaching Cues:** "Push the shot up and out," "Get it over the cone," "Extend fully through your fingers at release."

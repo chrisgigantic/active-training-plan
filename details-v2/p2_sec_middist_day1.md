@@ -1,17 +1,17 @@
-# Day 1: Aerobic Base
+# Day 1: Aerobic Support
 
 **Group:** Secondary Mid-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building a solid aerobic foundation, which is the cornerstone of all middle-distance running.
+To maintain and support the aerobic base built in the previous phase. This steady-state run is crucial for endurance, recovery between harder workouts, and overall cardiovascular health, which is the foundation for middle-distance performance.
 
-### Drills:
+### Activity:
 
-1.  **Easy Run:**
-    *   **Purpose:** To increase cardiovascular fitness, improve endurance, and build capillary density in the muscles without putting too much stress on the body.
-    *   **Execution:** Run for 20 to 30 minutes at a comfortable, conversational pace. This means you should be able to hold a conversation with a training partner without gasping for breath. The run can be done on a track, a grass field, or a road.
-    *   **Sets/Reps:** One continuous run.
-    *   **Coaching Cues:** "Keep it easy and relaxed," "The goal is time on your feet, not speed," "Listen to your body."
+1.  **Moderate Run:**
+    *   **Purpose:** To provide a cardiovascular stimulus that maintains aerobic fitness without causing significant fatigue. This type of run supports the higher intensity workouts planned for other days of the week.
+    *   **Execution:** The athlete runs for 25-30 minutes at a steady, comfortable, and conversational pace. The effort should be consistent, allowing them to hold a rhythm without straining. This can be done on a track, field, or a safe road/trail route.
+    *   **Sets/Reps:** One continuous run of 25-30 minutes.
+    *   **Coaching Cues:** "Find a smooth and easy rhythm," "Your breathing should be controlled, not labored," "Focus on good posture: run tall," "This is about time on your feet, not speed."

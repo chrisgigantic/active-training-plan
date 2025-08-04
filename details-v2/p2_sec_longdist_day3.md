@@ -1,18 +1,17 @@
-# Day 3: Aerobic Threshold
+# Day 3: VO2 Max Intervals
 
 **Group:** Secondary Long-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Improving the body's ability to clear lactate by running at a sustained, comfortably hard pace (threshold pace).
+To increase the body's maximum rate of oxygen consumption (VO2 Max). This is a very high-intensity workout that directly translates to a faster potential race pace in events from the 1500m to the 5k.
 
 ### Drills:
 
-1.  **Keep the Pace Drill (Tempo Run) (E1, pg. 22):**
-    *   **Purpose:** To help runners learn to maintain an even pace over various intervals, which is a key skill for threshold running.
-    *   **Execution:** This drill is best executed as a "tempo run." The goal is to run continuously for 20 minutes at a pace that is "comfortably hard" - you can't hold a full conversation, but you're not gasping for air. This pace corresponds to the aerobic or lactate threshold.
-    *   **Alternative (Interval-based):** The coach can set time goals for specific intervals (e.g., every 400m) to help athletes learn the correct pace.
-    *   **Sets/Reps:** One continuous 20-minute run.
-    *   **Coaching Cues:** "Find a rhythm you can hold," "This should feel strong, not all-out," "Focus on staying relaxed even when it gets uncomfortable."
+1.  **Interval Sprints Drill (E1):**
+    *   **Purpose:** To stress the cardiovascular system to its maximum capacity, forcing adaptations that lead to a higher VO2 Max. These intervals are run at a very hard effort, close to an all-out race pace for the given distance.
+    *   **Execution:** The athlete runs a series of intervals over a set distance (e.g., 800 meters) at a hard, demanding pace (around 90-95% of max effort for that distance). The recovery period is typically active (walking or very slow jogging) and is often equal to the time it took to run the interval (e.g., a 3-minute 800m is followed by a 3-minute recovery).
+    *   **Sets/Reps:** 4-5 repetitions of 800m with an equal work-to-rest ratio.
+    *   **Coaching Cues:** "This is a hard effort, be prepared to push," "Focus on staying strong and maintaining your form when you get tired," "Control your breathing during the recovery," "Try to keep your interval times consistent."

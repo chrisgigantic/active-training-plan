@@ -1,26 +1,23 @@
-# Day 1: Foundational Strength (Bodyweight)
+# Day 1: Explosive Strength
 
 **Group:** Secondary Throwers
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building a base of total-body strength and explosive power using fundamental bodyweight movements.
+To develop the whole-body explosive strength that is fundamental to all throwing events. This session uses high-intensity plyometrics to improve the rate of force development.
 
 ### Drills:
 
-1.  **Tuck Jumps (T1 / T2, pg. 38):**
-    *   **Purpose:** To develop explosive vertical power from a two-footed stance.
-    *   **Execution:** From a standing position, jump up and bring your knees as close to your chest as possible. Use your arms to help propel you upward.
-    *   **Sets/Reps:** 3 sets of 8-10 jumps.
+1.  **Depth Jumps (low box) (T1):**
+    *   **Purpose:** To enhance reactive strength and vertical power. This advanced plyometric drill trains the muscles to absorb and redirect force rapidly, which is essential for the "block" and final explosive effort in throws.
+    *   **Execution:** An athlete stands on a low, sturdy box (12-18 inches). They step off (not jump), land on both feet, and immediately explode into a maximal vertical jump. The goal is to minimize ground contact time.
+    *   **Sets/Reps:** 2-3 sets of 4-5 jumps. This is a very high-intensity exercise, so quality and full recovery between sets are paramount.
+    *   **Coaching Cues:** "Quick off the ground like it's hot," "Absorb the landing and explode up," "Use your arms to drive you higher."
 
-2.  **Push-ups:**
-    *   **Purpose:** To build upper body strength, particularly in the chest, shoulders, and triceps.
-    *   **Execution:** Start in a high plank position with hands slightly wider than your shoulders. Lower your body until your chest nearly touches the floor, then push back up to the starting position. Keep your body in a straight line.
-    *   **Sets/Reps:** 3 sets to a comfortable failure (as many reps as possible with good form).
-
-3.  **Bodyweight Squats:**
-    *   **Purpose:** To build foundational lower body strength.
-    *   **Execution:** Stand with feet shoulder-width apart. Lower your hips back and down as if sitting in a chair, keeping your chest up and back straight.
-    *   **Sets/Reps:** 3 sets of 15-20 reps.
+2.  **Bounding for Distance (T1):**
+    *   **Purpose:** To develop horizontal power and the coordination to transfer force from one leg to the other. This is crucial for generating momentum and power across the throwing circle or runway.
+    *   **Execution:** The athlete performs exaggerated, powerful running strides over a distance of 20-30 meters. The focus is on maximizing the distance of each bound by driving the knee up and pushing off the ground forcefully.
+    *   **Sets/Reps:** 3-4 sets of 20-30 meter bounds with a walk-back recovery.
+    *   **Coaching Cues:** "Push the ground away behind you," "Cover as much ground as you can with each step," "Drive your knees high and be powerful."

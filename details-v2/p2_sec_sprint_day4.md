@@ -1,23 +1,25 @@
-# Day 4: General Strength & Mobility
+# Day 4: Event-Specific Strength
 
 **Group:** Secondary Sprinters
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Developing explosive lateral power and comprehensive core strength.
+To build the explosive, event-specific strength that underpins powerful sprinting. This session combines plyometrics for reactive power with core exercises that stabilize the body during high-speed movements.
 
 ### Drills:
 
-1.  **Plyo: Lateral Jump & Stick (T1 / T2, pg. 8):**
-    *   **Purpose:** To develop first-step explosion and lateral power.
-    *   **Execution:** Start standing on just your right foot. Jump off that foot to the left, landing on your left foot. Hold the landing for three seconds, maintaining balance. Then, jump back to the right, landing on your right foot.
-    *   **Sets/Reps:** 3 sets of 5 reps (one jump to each side is one rep).
-    *   **Coaching Cues:** "Push side to side as you jump," "Maintain a stable core," "Stick the landing."
+1.  **Plyometrics: Bounding & Tuck Jumps (T1):**
+    *   **Purpose:** To improve elastic strength and the ability to generate maximum force in minimal time. Bounding develops horizontal power, while tuck jumps focus on vertical power.
+    *   **Execution:**
+        *   **Bounding:** The athlete performs exaggerated running strides over a set distance (e.g., 30-40 meters), focusing on maximizing air time and covering as much ground as possible with each step. The emphasis is on driving the knee up and pushing off powerfully.
+        *   **Tuck Jumps:** From a standing position, the athlete jumps vertically as high as possible, pulling their knees towards their chest at the peak of the jump.
+    *   **Sets/Reps:** 2-3 sets of 30m bounds, and 2-3 sets of 8-10 tuck jumps. Full recovery is needed between sets.
+    *   **Coaching Cues:** (Bounding) "Push off the ground hard," "Drive your knees high." (Tuck Jumps) "Explode off the floor," "Knees to chest."
 
-2.  **Core: Full Circuit (Pillars, V-Sits):**
-    *   **Purpose:** To build a strong, resilient core that can handle the forces of sprinting.
-    *   **Execution (Pillars):** Hold a standard plank position (body in a straight line from ear to ankle) for 20-30 seconds. You can also include side pillars.
-    *   **Execution (V Sit Ups):** Lie on your back. Bring your knees and chest up at the same time to form a "V" shape. Lower back down but keep feet and shoulders off the ground.
-    *   **Sets/Reps:** Perform as a circuit. 3 sets of 20-30 second holds for Pillars, and 3 sets of 15-20 reps for V-Sits.
+2.  **Core: Slams (no ball, just motion) (T2):**
+    *   **Purpose:** To develop powerful and fast rotational core strength. A strong, quick-firing core is essential for transferring force from the lower to the upper body and for maintaining stability while sprinting at top speed.
+    *   **Execution:** The athlete stands with feet shoulder-width apart, knees slightly bent. They raise both hands overhead, then explosively "slam" them down towards the ground between their feet by contracting their abs and using their lats. The motion should be fast and aggressive, mimicking the forceful movement of a medicine ball slam without any equipment.
+    *   **Sets/Reps:** 3 sets of 10-12 powerful repetitions.
+    *   **Coaching Cues:** "Use your whole body," "Slam down hard and fast," "Tighten your stomach as you come down."

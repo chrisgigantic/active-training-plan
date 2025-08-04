@@ -1,29 +1,23 @@
-# Day 1: Acceleration & Power Foundation
+# Day 1: Max Velocity & Power
 
 **Group:** Secondary Sprint-Jump (LJ/TJ)
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Developing the fundamental explosive power and acceleration mechanics required for both sprinting and jumping events.
+To develop maximum velocity for the sprint approach and to build reactive power, which is critical for converting horizontal speed into vertical and horizontal distance in jumps.
 
 ### Drills:
 
-1.  **Falling Runs (T1 / T2, pg. 35):**
-    *   **Purpose:** To teach a natural forward lean and explosive start.
-    *   **Execution:** Stand tall with good posture. Allow your body to fall forward, keeping a straight line from head to ankles. Just before you lose balance, drive your legs out and explode into a 10-20 yard sprint.
-    *   **Sets/Reps:** 4-5 repetitions with full recovery.
-    *   **Coaching Cues:** "Let gravity do the work," "Push the ground away from you," "Stay low in the first few steps."
+1.  **Increase Acceleration Drill (E1):**
+    *   **Purpose:** To train the nervous system and muscles to accelerate in the later stages of a sprint, fighting the natural tendency to decelerate. This is crucial for maintaining speed through the takeoff board.
+    *   **Execution:** The athlete sprints for 100 meters. The first 50 meters are run at a strong, but sub-maximal pace (around 90%). At the 50-meter mark, the athlete consciously increases their effort and acceleration, aiming to achieve maximum velocity in the final 50 meters.
+    *   **Sets/Reps:** 3-4 repetitions with full recovery (4-5 minutes) to ensure each rep is high quality.
+    *   **Coaching Cues:** "Build speed to the 50," "At the 50, switch gears and drive," "Finish faster than you started," "Stay tall and powerful."
 
-2.  **Bounding (T1 / T2, pg. 38):**
-    *   **Purpose:** To develop explosive power and improve stride length and hip drive.
-    *   **Execution:** This is an exaggerated running motion. Drive the knee up forcefully and extend the stride, aiming for maximum distance on each "bound." Land on the opposite foot and immediately explode into the next bound.
-    *   **Sets/Reps:** 2-3 sets over 20-30 meters.
-    *   **Coaching Cues:** "Drive your knees high," "Powerful arm swing," "Explode off the ground."
-
-3.  **Tuck Jumps (Low Volume) (T1 / T2, pg. 38):**
-    *   **Purpose:** To develop vertical explosive power and fast muscle contraction.
-    *   **Execution:** Jump forward off of two feet, trying to bring the knees up as high as the hips. On each jump, bend your knees and use your arms to explode up as high as you can.
-    *   **Sets/Reps:** 2-3 sets of 5-8 jumps. Keep the volume low initially to avoid excessive impact.
-    *   **Coaching Cues:** "Knees to chest," "Explode up," "Land softly."
+2.  **Box Drops (on ledge/bench) (T1):**
+    *   **Purpose:** To develop reactive strength and the stretch-shortening cycle. This drill teaches the muscles to absorb force upon landing and immediately redirect it into an explosive upward movement, mimicking the takeoff in a jump.
+    *   **Execution:** The athlete stands on a sturdy box or bench (12-20 inches high). They step off (do not jump off) the edge, landing on two feet on the ground. The moment their feet touch the ground, they should explode into a maximal vertical jump. The key is to minimize ground contact time.
+    *   **Sets/Reps:** 2-3 sets of 5-6 drops.
+    *   **Coaching Cues:** "Step off, don't jump," "Spend as little time on the ground as possible," "Explode up immediately," "Land soft on the box, jump high off the ground."

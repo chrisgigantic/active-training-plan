@@ -1,29 +1,23 @@
-# Day 1: Acceleration Foundation
+# Day 1: Acceleration Development
 
 **Group:** Elementary Sprinters
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building the fundamental patterns of acceleration. The goal is to teach the body to push horizontally and drive forward effectively.
+To build on the acceleration foundation by introducing more dynamic starting positions and increasing the intensity of sprints, preparing athletes for more competitive efforts.
 
 ### Drills:
 
-1.  **Falling Runs (T1):**
-    *   **Purpose:** To teach the natural feeling of leaning into acceleration.
-    *   **Execution:** Stand tall, feet together. Let your body fall forward, keeping a straight line from head to heels. When you feel you're about to lose balance, drive your legs out to "catch" yourself and sprint for 10-15 meters.
-    *   **Sets/Reps:** 4-5 repetitions.
-    *   **Coaching Cues:** "Don't bend at the waist," "Let gravity pull you," "Push the ground away behind you."
+1.  **3-Point Starts to 20m:**
+    *   **Purpose:** To improve explosive acceleration from a static start, focusing on maintaining a low body angle and powerful leg drive over the initial 20 meters.
+    *   **Execution:** The athlete assumes a 3-point stance with one hand down on the starting line and feet staggered. On the "set" command, hips rise slightly above the shoulders. On "go," the athlete drives out explosively, focusing on pushing powerfully for the full 20 meters while keeping a low head and body angle for the first few steps.
+    *   **Sets/Reps:** 5-6 repetitions with full recovery (2-3 minutes) between each start.
+    *   **Coaching Cues:** "Push the ground away," "Stay low and drive," "Powerful arms, powerful legs."
 
-2.  **3-Point Starts (No Blocks):**
-    *   **Purpose:** Introduce a more powerful starting position without the complexity of blocks.
-    *   **Execution:** One hand down on the start line, feet staggered. The front foot should be about a foot behind the line, and the back knee is on the ground. On "set," lift the hips higher than the shoulders. On "go," drive out explosively.
-    *   **Sets/Reps:** 5-6 starts over 10-20 meters.
-    *   **Coaching Cues:** "Push with both feet," "Keep your head down for the first few steps," "Low and powerful."
-
-3.  **10-20m Sprints:**
-    *   **Purpose:** To practice the full acceleration pattern at maximum effort.
-    *   **Execution:** After the 3-point start, continue sprinting at 95-100% effort for the full distance.
-    *   **Sets/Reps:** 4-5 sprints with full recovery (2-3 minutes) between each.
-    *   **Coaching Cues:** "Every step should be powerful," "Drive your arms," "Stay relaxed."
+2.  **Get Ups (from push-up pos.) (T1):**
+    *   **Purpose:** To develop total-body explosive power and the ability to transition quickly from the ground to a full sprint. This builds crucial starting strength.
+    *   **Execution:** The athlete begins in a standard push-up position. On command, they explosively push off the ground, bringing their feet underneath their hips to land in a low crouch, and immediately sprint forward for 10-15 meters.
+    *   **Sets/Reps:** 4-5 repetitions with full recovery.
+    *   **Coaching Cues:** "Explode up and forward," "Get your feet under you fast," "Drive out, not up."

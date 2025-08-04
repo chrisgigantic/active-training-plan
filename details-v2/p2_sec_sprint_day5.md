@@ -1,30 +1,25 @@
-# Day 5: Active Recovery & Drill Refinement
+# Day 5: Active Recovery & Shakeout
 
 **Group:** Secondary Sprinters
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Low-intensity drills to promote recovery, refine coordination, and improve hip mobility.
+To promote recovery from a hard week of training while still engaging the neuromuscular system. This session helps flush out metabolic waste, reduce muscle soreness, and keep the body feeling sharp without adding significant stress.
 
 ### Drills:
 
-1.  **A-March Drill (E1, pg. 14):**
-    *   **Purpose:** To reinforce proper sprint posture and the mechanics of a high knee lift.
-    *   **Execution:** This is a walking drill. March forward, lifting the lead knee high and keeping the toe pointed up. The action simulates the "climbing" motion over a hurdle. Exaggerate each movement to feel the stretch and activation.
-    *   **Sets/Reps:** 2-3 repetitions over 20-30 meters.
-    *   **Coaching Cues:** "Walk tall," "Knee up, toe up, heel up," "Be deliberate with each step."
+1.  **Light Jogging:**
+    *   **Purpose:** To increase blood flow to the muscles, which aids in the removal of waste products and delivers nutrients needed for repair. It helps transition the body from a state of high stress to recovery.
+    *   **Execution:** A slow, easy, conversational-pace jog for 5-10 minutes around a field or track. The intensity should be very low.
+    *   **Sets/Reps:** One continuous 5-10 minute jog.
+    *   **Coaching Cues:** "Keep it light and easy," "Stay relaxed," "Just get the blood flowing."
 
-2.  **Carioca (T2, pg. 12):**
-    *   **Purpose:** To improve hip mobility, coordination, and lateral movement.
-    *   **Execution:** Move laterally. Step the trail leg behind the lead leg, then step laterally with the lead leg. Then, bring the trail leg up and across in front of the lead leg. Repeat this "behind, side, front" sequence.
-    *   **Sets/Reps:** Perform for 15-20 yards, then switch directions. Do 2-3 sets in each direction.
-    *   **Coaching Cues:** "Twist your hips," "Stay on the balls of your feet," "Keep it fluid."
-
-3.  **Hurdle Mobility (No Hurdles):**
-    *   **Purpose:** To improve the range of motion in the hips, which is crucial for a powerful stride.
+2.  **Linear & Lateral Skips (T2):**
+    *   **Purpose:** To maintain coordination and reinforce good posture in a low-impact manner. Skipping helps to keep the nervous system primed for explosive movements without the stress of sprinting.
     *   **Execution:**
-        *   **Leg Swings:** Stand next to a wall for support. Swing one leg forward and backward (10-15 times), then side to side (10-15 times). Repeat with the other leg.
-        *   **Open/Close the Gate:** Walk forward. With each step, lift your knee and rotate your hip outward ("opening the gate"). On the way back, do the reverse motion, rotating the hip inward ("closing the gate").
-    *   **Sets/Reps:** 1 set of each exercise.
+        *   **Linear Skips:** The athlete skips forward for 20-30 meters, focusing on a gentle rhythm and good posture (tall chest, relaxed arms).
+        *   **Lateral Skips:** The athlete skips sideways for 20-30 meters, focusing on hip mobility and coordination. Perform in both directions.
+    *   **Sets/Reps:** 2-3 sets of 30m for each variation (linear and lateral).
+    *   **Coaching Cues:** "Be light and bouncy," "Stay coordinated," "Relaxed rhythm."

@@ -1,17 +1,17 @@
-# Day 1: Aerobic Base
+# Day 1: Aerobic Support
 
 **Group:** Secondary Long-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Building a strong and durable aerobic foundation, which is the most critical element for long-distance success.
+To continue building the aerobic engine, which is the cornerstone of long-distance running. This steady run improves cardiovascular efficiency, muscular endurance, and the body's ability to use oxygen effectively.
 
-### Drills:
+### Activity:
 
-1.  **Easy Run:**
-    *   **Purpose:** To increase cardiovascular fitness, improve the body's ability to use oxygen, and build endurance for longer events.
-    *   **Execution:** Run for 25 to 35 minutes at a comfortable, conversational pace. The effort should be easy enough that you could chat with a training partner. The run can be done on varied terrain like roads, trails, or grass fields.
-    *   **Sets/Reps:** One continuous run.
-    *   **Coaching Cues:** "Stay relaxed and smooth," "This is about building your engine," "Listen to your body and don't push the pace."
+1.  **Moderate Run:**
+    *   **Purpose:** To provide a sustained aerobic stimulus that enhances endurance and supports the more intense workouts later in the week. It builds the foundation needed to handle higher training volumes and intensities.
+    *   **Execution:** The athlete performs a continuous run for 30-40 minutes at a steady, conversational pace. The effort should be consistent and controlled, not strenuous. This run is best done on varied terrain like roads or trails to build strength, but a track or field is also suitable.
+    *   **Sets/Reps:** One continuous run of 30-40 minutes.
+    *   **Coaching Cues:** "Settle into a rhythm you can hold for the whole time," "Focus on relaxed, efficient form," "Breathing should be deep and regular," "This is about building your engine."

@@ -1,22 +1,19 @@
-# Day 4: General Strength & Mobility
+# Day 4: Active Recovery & Drills
 
 **Group:** Secondary Long-Distance
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Improving full-body strength, balance, and mobility to support a strong running posture and prevent injuries.
+To allow the body to recover and adapt from the high-intensity workouts of the previous days. Active recovery is crucial for preventing overtraining and injury, ensuring the athlete is ready for the upcoming long run.
 
-### Drills:
+### Activity:
 
-1.  **Bodyweight Circuit:**
-    *   **Purpose:** To build functional strength in the major muscle groups used for running.
-    *   **Execution:** Perform a circuit of bodyweight exercises such as Squats, Lunges, Push-ups, and Planks.
-    *   **Sets/Reps:** 3 rounds of the circuit. For each exercise, perform 10-15 reps or hold for 30-60 seconds.
-
-2.  **Balance Pick Up Game (T2, pg. 10):**
-    *   **Purpose:** To develop single-leg balance, strength, and control.
-    *   **Execution:** This is essentially a single-leg squat. Stand on one leg. Bend down on that leg to pick up a small object (like a cone or a baseball) from the ground, then return to a full standing position. Then, go back down to set the object back on the ground.
-    *   **Sets/Reps:** 3 sets of 5-10 reps on each leg.
-    *   **Coaching Cues:** "Go up and down slowly and with control," "Keep your back foot in the air," "Keep your core solid."
+1.  **Very Easy Run or Cross-Train:**
+    *   **Purpose:** To promote blood flow and aid recovery without adding any significant training stress. Cross-training (like swimming or cycling) can provide a mental break and work different muscles while still offering an aerobic benefit.
+    *   **Execution:**
+        *   **Option A (Easy Run):** A 20-25 minute run at a very slow, relaxed, and easy pace. The effort should be minimal.
+        *   **Option B (Cross-Train):** 20-30 minutes of a low-impact activity like stationary biking, swimming, or using an elliptical. The intensity should remain low and conversational.
+    *   **Sets/Reps:** One continuous 20-30 minute session.
+    *   **Coaching Cues:** "Today is about recovery, not fitness," "Keep the effort very light," "Listen to your body and give it a chance to heal."

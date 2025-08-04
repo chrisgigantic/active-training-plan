@@ -1,23 +1,23 @@
-# Day 4: Strength & Mobility
+# Day 4: Max Strength & Core
 
 **Group:** Secondary Throwers
-**Phase:** General Physical Preparedness (Weeks 1-2)
+**Phase:** Specific Physical Preparedness (Weeks 3-5)
 
 ---
 
 ### Focus:
-Developing explosive power for deceleration and building crucial posterior chain strength for a powerful throw.
+To develop maximum unilateral (single-leg) strength and the rotational core power that is essential for transferring force from the ground, through the body, and into the implement.
 
 ### Drills:
 
-1.  **Backward Jump & Stick (T1 / T2, pg. 7):**
-    *   **Purpose:** To develop change of direction skills, core strength, and lower body balance, which are important for controlling the rotational forces of the throw.
-    *   **Execution:** Stand on one foot. Take a moderate hop backward and "stick" the landing on the same foot, holding the position for approximately three seconds. Then, hop back to the start using the opposite foot.
-    *   **Sets/Reps:** 3 sets of 5 reps.
-    *   **Coaching Cues:** "Maintain control by flexing your knee and hip," "Control the core of your body."
+1.  **One-leg Jumps (T2):**
+    *   **Purpose:** To build explosive power and stability in each leg individually. This is critical for the blocking action of the non-throwing side and the driving force of the throwing side leg.
+    *   **Execution:** The athlete stands on one leg and performs a series of maximal-effort jumps for distance or height. This can be done as single hops in place, or as a series of hops forward over a set distance (e.g., 10-15 meters).
+    *   **Sets/Reps:** 2-3 sets of 5-6 jumps per leg.
+    *   **Coaching Cues:** "Explode off the ground with each jump," "Land stable and controlled before the next jump," "Use your arms to help you generate power."
 
-2.  **Supermans (for back strength) (T1 / T2, pg. 61):**
-    *   **Purpose:** To strengthen the core, particularly the lower back muscles, which are vital for generating power and maintaining posture during the throw.
-    *   **Execution:** Lie flat on the ground on your stomach. Lift your arms, chest, and legs up at the same time. Hold for about two seconds, then go back to the starting position in a controlled manner.
-    *   **Sets/Reps:** 3 sets of 10-20 repetitions.
-    *   **Coaching Cues:** "Come down under control," "Squeeze your glutes at the top."
+2.  **Core Rotation (no ball) (T2):**
+    *   **Purpose:** To develop the high-speed rotational strength and endurance in the core (obliques, abs, lower back) that is central to all throwing events.
+    *   **Execution:** The athlete lies on their back with knees bent and feet flat on the floor. They bring their knees up towards their chest and then rotate them from side to side, trying to touch their knees to the ground on each side while keeping their shoulders flat on the ground. For a more advanced version, they can extend their legs straight up and rotate them side to side.
+    *   **Sets/Reps:** 3 sets of 10-15 rotations to each side.
+    *   **Coaching Cues:** "Control the movement, don't just swing your legs," "Keep your shoulders pinned to the floor," "Feel the stretch and contraction in your sides."
