@@ -1,0 +1,55 @@
+#  Sprint Training: What Surfaces Should You Train On? 
+August 12, 2021
+Link
+Close share Copy link
+# **Sprint Training On Different Surfaces**
+While discussions about training workload progressions are commonplace, rarely do people talk about how their use of different training surfaces change over time. Should you run on the track all year, or should you use grass or turf?
+Because surfaces differ in their firmness, consistency, and rebound, athletes can use variations in surfaces as a way to add variability to their program, to constrain certain physical outputs, and to bring a slightly different feel to the training that we perform on a daily basis.
+## **Pro Sprinters Use Grass**
+Usain Bolt and other Jamaican sprinters are known for training on grass for a large part of their preparatory periods. According to “Insights to Jamaican Sprinting Success”, Asafa Powell’s coach Stephen Francis has them stay on grass until March, at which point they use a blend of grass and track for training. 
+Similarly, Anthony Davis of the University of Technology where Usain Bolt trained, stated that they use grass for much of their training as a way to build strong ankles and minimize injury. 
+Usain Bolt himself was interviewed about training on grass, and he said that younger athletes especially need to train on grass as a way to avoid shin splints.
+Outside of Jamaica, Grenada’s 400m athletes are known for training on grass as well. Alleyne Francique, a former Olympic 400m runner from Grenada and coach at Texas A&M, stated that “running on grass makes you stronger.”
+In my own experience, training on grass is useful in the off-season as a way to manipulate loading, make minor changes to the physical demands of the sprinter, to reduce the predictability of each step, and as a way to avoid excessive impact as the athletes increase their training loads during preparatory periods.
+## **  
+Why Train On Grass?**
+Because grass has less rebound or bounce compared to a synthetic track, athletes experience an environmental constraint that they must overcome if they want to sprint on grass similarly to how they sprint on the track. 
+I believe that athletes sprinting on grass have to work slightly harder to produce vertical forces and maintain vertical stiffness, and that this can have a beneficial training effect over time. If athletes can learn to be stiffer and bouncier on a surface that is not conducive to being bouncy, they will have no problem rebounding off of a synthetic track with high levels of stiffness when the time comes to change surfaces.
+Another aspect of sprinting on grass is that, even though we should use the flattest and highest quality grass we have access to, small deviations in grass surfaces reduce the predictability of each ground contact, forcing the brain and the body to make small adjustments that change with every sprint. From a technical standpoint, this small amount of variation helps prevent the brain from getting stale, as the brain has to constantly adjust movement to match the demands of the surface. I believe this can help develop better subconscious control of the body while in the air and on the ground, compared to running on a more predictable surface like a track
+These small differences between steps also allow for the ankles and other joints of the body to be physically worked more broadly than when sprinting on a track, which can help build strength in those joints and minimize chronic overuse aches and pains. Similar to how we use different movements and ranges of motion in the gym to develop a wide range of movement competencies, the perturbations that are inherent to grass can help develop the feet, ankles, knees, and hips in a way that is different from sprinting on a perfectly flat track.
+By using a high quality grass surface during preparatory periods, athletes might be able to build a stronger and more capable foundation which can later be progressed by transitioning to a synthetic track. Athletes can build stronger ankles and legs overall, constrain and therefore develop greater levels of leg stiffness, and be exposed to a more diverse range of ground contacts, all of which help contribute to being a well rounded athlete during preparation.
+## **Benefits Of Synthetic Tracks**
+While grass is clearly a great tool, synthetic tracks have their own benefits which we can make use of at the right times. This allows for a progression that is independent of typical volume and intensity modifications, as the different demands of the track will force the athletes to adapt with shorter ground contact times, greater vertical projection, and give them a kinesthetically varied experience when training.
+One benefit of synthetic tracks is that, because you can grip the ground with your spikes without fear of slipping, accelerations can be more aggressive on the track. It can be easier to slip when aggressively training on grass, which might cause athletes to hold back during early acceleration. 
+Another benefit of the track is due to the greater rebound and bounce inherent to the surface. This stiffness and rebound allows for athletes to sprint with shorter ground contact times and run faster overall, providing a progression in speed stimulus that is independent of the athlete’s intent.
+Since synthetic tracks are very flat and consistent surfaces, athletes will likely feel that they are able to put out their highest intensities on the track, which is conducive to developing their maximal velocity skills. Because of the predictability of the surface, athletes can sprint with full intent without fear of stepping incorrectly. This predictability can help make the intensity of sprints higher without telling the athletes that they need to try to sprint faster. They will simply sprint faster as a result of being on a surface more conducive to sprinting fast, offering a minor but valuable progression opportunity.
+## **Implementing Training Surface Progressions In Your Program**
+In a general sense, your use of training surfaces should progress from general to specific over time, such as from using grass and possibly hills earlier in the training year to using the track for most of your training closer to competition.
+This progression should occur gradually. At the very beginning of your training year, grass can be the primary surface for your sprint training, given that the grass is flat, high quality, and safe to use. Avoid using any grass surfaces with major deviations to avoid twisting an ankle or something similar.
+After a couple months of training on grass, you can consider introducing training sessions on the track, starting with one or two workouts per week. I would recommend avoiding an abrupt transition from grass to track, as the more jarring impact and shorter ground contact time demands of the track may cause added stress to your body. Also, if your track has a high quality grass field, you can contrast between sprints on the grass and sprints on the track as a way to create additional variation in your training and blend the benefits of both the track and the grass.
+As time goes on, more days can be dedicated to training on the track, eventually reaching a point where most or all of your training sessions are done on the track. The grass can still be used later in the preparatory periods, such for low intensity workouts or for reducing impacts when an athlete is feeling worn down by sprinting on the track.
+It is worth noting that I have met athletes who train all year on the grass with great success, so it is not necessarily required that you train on a synthetic track. Personally I do believe that because of the different feel and demands of the track compared to grass, it would be wise for all sprinters to have some transition period where they move to the track before or during their competitive season. It is possible that simply competing enough times on a synthetic track could give athletes the exposure needed to fully maximize their on-track performance, but I am a proponent of training on the track when competitions are near so there are no surprises when you step on the track to compete.
+It would make sense to me that there is some latency between when you move from the grass to the track and when you perform your best on the track, so I see it as wise to spend time training on the track before you compete.
+## **Example Progression Timeline**
+You are free to do what you want, but here is a basic timeline of progression that might be useful for relatively experienced sprinters competing in North America.
+  * September Through October - Grass Only
+  * November - 50% Grass, 50% Track
+  * December 25% Grass, 75% Track
+  * January Through February - Track Only
+  * March - 50% Grass, 50% Track
+  * April - 25% Grass, 75% Track
+  * May Through June - Track Only
+
+
+One rule of thumb for me would be that, the closer I am to competition, the more my competition specific workouts should be performed on the track. 
+For example if we are in December and 25% of my workouts are on grass, those workouts would be my less specific workouts such as an intensive tempo workout, a med ball throw and bounding workout, etc. I would not be performing all out speed or speed endurance work on grass if I am healthy and have a track available to me, as I want these workouts to mimic the demands of competition as much as possible.
+Another way to view this could be that if 25% to 50% of a workout is performed on grass, the grass reps could be warm up runs or contrasting reps that are mixed with reps performed on the synthetic track.
+## **Sprinting On A Treadmill**
+Lately I have made good use of the **[sprinting treadmill](https://sprintingworkouts.com/blogs/training-equipment/treadmills-for-sprinting "sprinting treadmill") **at my gym. After suffering an injury at the track, running on a curved treadmill was quite useful.
+Normal treadmills can be used for tempo endurance training, but most do not go fast enough to be used for any intense form of sprinting.
+In general, I would suggest sprinting on grass or a track, but sprinting on a treadmill is useful if you cannot access running facilities outdoors.
+## **Conclusion**
+Training on grass is a good way to begin your training year with less impact, to create some variability in training, to give room to progress through changes in surfaces, and as a way to create an environmental constraint on vertical stiffness and force production.
+Athletes should transition from grass to track over time, shifting toward competition specific surfaces the closer they get to competition. This progression should be gradual rather than abrupt to ensure the athlete stays healthy and can adapt to the changing demands at their own pace.
+There are no hard and fast rules by which you must abide when it comes to choosing or transitioning between surfaces, and you need to do what works best for you and your situation. Regardless, it is worth considering how you might benefit from creating variation through your selection of surfaces to train on.
+[ ](https://sprintingworkouts.com/blogs/training)
