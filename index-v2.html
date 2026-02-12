@@ -731,11 +731,18 @@
             const modalBody = document.getElementById('modal-body-content');
             const closeButton = document.querySelector('.close-button');
             const tableContainer = document.querySelector('.table-container');
+            const contentCache = {};
 
             // Function to open the modal and fetch content
             const openModal = (cell) => {
                 const fileName = cell.getAttribute('data-details-file');
                 if (!fileName) return;
+
+                if (contentCache[fileName]) {
+                    modalBody.innerHTML = contentCache[fileName];
+                    modal.style.display = 'block';
+                    return;
+                }
 
                 const filePath = `details-v2/${fileName}`;
 
@@ -747,7 +754,9 @@
                         return response.text();
                     })
                     .then(markdown => {
-                        modalBody.innerHTML = marked.parse(markdown);
+                        const html = marked.parse(markdown);
+                        contentCache[fileName] = html;
+                        modalBody.innerHTML = html;
                         modal.style.display = 'block';
                     })
                     .catch(error => {
