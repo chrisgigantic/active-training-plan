@@ -5,34 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Training Plan</title>
     <style>
-        .plan-controls {
-            text-align: center;
-            margin-bottom: 2em;
-            padding: 15px;
-            background: #ecf0f1;
-            border-radius: 5px;
-        }
-        .plan-controls label {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .plan-controls input[type="number"] {
-            width: 80px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        .plan-controls button {
-            padding: 6px 12px;
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        .plan-controls button:hover {
-            background-color: #c0392b;
-        }
+        /* General Reset & Typography */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
@@ -44,212 +17,187 @@
         .container {
             margin: 0;
             padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
-        h1, h2, h3 {
-            color: #333;
-            margin-top: 1em;
-        }
-        h1 {
+
+        /* Controls */
+        .plan-controls {
             text-align: center;
-            color: #2c3e50;
-            margin-bottom: 1em;
-        }
-        h3 {
-            border-bottom: 2px solid #e74c3c;
-            padding-bottom: 10px;
-            margin-top: 2em;
-        }
-        p {
-            margin-bottom: 1em;
-        }
-        ul, ol {
-            margin-bottom: 1em;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ccc;
-            margin: 2em 0;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-            min-width: 150px;
-        }
-        th {
-            background-color: #e74c3c;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #ddd;
-        }
-        strong {
-            color: #c0392b;
-        }
-        .warmup-group, .cooldown-section {
+            margin-bottom: 2em;
+            padding: 15px;
             background: #ecf0f1;
-            padding: 20px;
             border-radius: 5px;
-            margin-top: 20px;
         }
-        .warmup-group h3, .cooldown-section h3 {
-            border-bottom: none;
+        .plan-controls label { font-weight: bold; margin-right: 10px; }
+        .plan-controls input[type="number"] { width: 80px; padding: 5px; border: 1px solid #ccc; border-radius: 3px; }
+        .plan-controls button { padding: 6px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        .plan-controls button:hover { background-color: #c0392b; }
+
+        /* Typography & Layout */
+        h1, h2, h3 { color: #333; margin-top: 1em; }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 1em; }
+        h3 { border-bottom: 2px solid #e74c3c; padding-bottom: 10px; margin-top: 2em; }
+        p { margin-bottom: 1em; }
+        ul, ol { margin-bottom: 1em; padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+        hr { border: 0; height: 1px; background: #ccc; margin: 2em 0; }
+        strong { color: #c0392b; }
+
+        /* Warmup / Cooldown */
+        .warmup-group, .cooldown-section { background: #ecf0f1; padding: 20px; border-radius: 5px; margin-top: 20px; }
+        .warmup-group h3, .cooldown-section h3 { border-bottom: none; color: #2c3e50; }
+
+        /* Training Board (Kanban/Grid) */
+        .training-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Desktop: Masonry/Kanban feel */
+            gap: 20px;
+            margin-top: 20px;
+            align-items: start; /* Align cards to top */
+        }
+
+        .training-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .training-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .phase-badge {
+            display: inline-block;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            align-self: flex-start;
+        }
+
+        /* Phase Colors */
+        .phase-badge.phase-1-cell { background-color: #e74c3c; } /* Red */
+        .phase-badge.phase-2-cell { background-color: #2980b9; } /* Blue */
+        .phase-badge.phase-3-cell { background-color: #27ae60; } /* Green */
+
+        .group-title {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-size: 1.15em;
+            line-height: 1.3;
             color: #2c3e50;
         }
 
-        @media screen and (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            th, td {
-                padding: 10px;
-            }
+        .card-body {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .day-row {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            flex-direction: column; /* Stack label and content for better fit in cards */
+            gap: 4px;
+        }
+
+        .day-row:last-child { border-bottom: none; }
+        .day-row:hover { background-color: #fff5f5; }
+
+        .day-label {
+            font-weight: bold;
+            color: #7f8c8d;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .day-content {
+            font-size: 0.95em;
+            color: #444;
         }
 
         /* Modal Styles */
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
+            display: none;
+            position: fixed;
+            z-index: 1000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(3px);
         }
 
         .modal-content {
-            background-color: #fefefe;
-            margin: 10% auto; /* 10% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 30px;
+            border: none;
             width: 80%;
-            max-width: 700px;
+            max-width: 800px;
             border-radius: 8px;
             position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: modalFadeIn 0.3s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .close-button {
-            color: #aaa;
+            color: #999;
             float: right;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
             position: absolute;
-            top: 10px;
-            right: 20px;
+            top: 15px;
+            right: 25px;
+            line-height: 0.8;
+            transition: color 0.2s;
         }
 
         .close-button:hover,
         .close-button:focus {
-            color: black;
+            color: #333;
             text-decoration: none;
             cursor: pointer;
         }
 
-        /* Make table cells clickable */
-        .table-container td[data-details-file] {
-            cursor: pointer;
-        }
-        .table-container td[data-details-file]:hover {
-            background-color: #f5b7b1; /* A light red hover effect */
-        }
-
-        /* Desktop: Hide repeated phase cells */
-        .repeated-phase {
-            visibility: hidden;
-        }
-
-        /* Mobile Card View */
+        /* Mobile Optimization */
         @media screen and (max-width: 768px) {
-            /* Force table to not behave like a table */
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
+            .container { padding: 15px; }
 
-            /* Hide table headers (but not display: none;, for accessibility) */
-            thead tr {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
-            }
-
-            tr {
-                border: 1px solid #ccc;
-                margin-bottom: 1.5em;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-                background: #fff;
-                padding: 15px;
-            }
-
-            td {
-                /* Behave like a "row" */
-                border: none;
-                border-bottom: 1px solid #eee;
-                position: relative;
-                padding-left: 0;
-                padding-right: 0;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            td:last-child {
-                border-bottom: 0;
-            }
-
-            /* Phase and Group styling */
-            td:nth-of-type(1), td:nth-of-type(2) {
-                background-color: #f9f9f9;
-                font-weight: bold;
-                text-align: center;
-                border-bottom: none;
-                padding: 5px;
-            }
-
-            td:nth-of-type(1) {
-                font-size: 1.1em;
-                color: #e74c3c;
-                border-radius: 5px 5px 0 0;
-            }
-
-            /* Show repeated phase cells on mobile */
-            .repeated-phase {
-                visibility: visible;
-                display: block; /* Ensure it takes space */
-            }
-
-            /* Add labels before content */
-            td[data-label]:nth-of-type(n+3)::before {
-                content: attr(data-label);
-                display: block;
-                font-weight: bold;
-                color: #e74c3c;
-                margin-bottom: 5px;
-                text-transform: uppercase;
-                font-size: 0.85em;
-            }
-
-            /* Adjust Modal for Mobile */
-            .modal-content {
-                width: 95%;
-                margin: 20% auto;
+            .training-board {
+                grid-template-columns: 1fr; /* Full width cards */
+                gap: 25px;
             }
 
             .plan-controls {
@@ -257,17 +205,28 @@
                 flex-direction: column;
                 gap: 10px;
             }
+            .plan-controls input, .plan-controls button { width: 100%; box-sizing: border-box; }
 
-            .plan-controls input {
-                width: 100%;
-                box-sizing: border-box;
+            /* Mobile Modal - Centered Card Style */
+            .modal-content {
+                width: 85%;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-height: 80vh;
+                overflow-y: auto;
+                border-radius: 16px;
+                padding: 20px;
+                animation: modalMobileIn 0.3s;
             }
 
-            .plan-controls button {
-                width: 100%;
+            @keyframes modalMobileIn {
+                from { opacity: 0; transform: translate(-50%, -45%); }
+                to { opacity: 1; transform: translate(-50%, -50%); }
             }
         }
-    </style>
+</style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
@@ -493,149 +452,22 @@
         <div class="program-overview">
             <h2 data-heading="**Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)**">Program Overview: Specific Drills for Field/Road Training (LJ/TJ Focus)</h2>
             <p><strong>Note:</strong> All drills are sourced from <code>TotalTrackandFieldTrainingWorkouts1107.pdf</code> (T1), <code>EssentialTrackandFieldDrills955.pdf</code> (E1), or <code>TotalTrackandFieldTraining1225.pdf</code> (T2).</p>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th align="left">Phase</th>
-                            <th align="left">Athlete Group</th>
-                            <th align="left">Day 1 Focus</th>
-                            <th align="left">Day 2 Focus</th>
-                            <th align="left">Day 3 Focus</th>
-                            <th align="left">Day 4 Focus</th>
-                            <th align="left">Day 5 Focus</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td align="left" id="phase1-gpp" class="phase-1-cell" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Elementary Sprinters</strong></td>
-                            <td align="left" data-details-file="p1_elem_day1.md" data-label="Day 1 Focus"><strong>Acceleration Foundation:</strong><br>• Falling Runs (T1)<br>• 3-Point Starts (no blocks)<br>• 10-20m Sprints</td>
-                            <td align="left" data-details-file="p1_elem_day2.md" data-label="Day 2 Focus"><strong>General Endurance:</strong><br>• Keep the Pace Drill (E1)<br>• Frame as a whistle game on a field</td>
-                            <td align="left" data-details-file="p1_elem_day3.md" data-label="Day 3 Focus"><strong>Max Velocity Mechanics:</strong><br>• Step Over Drill (walking) (T1)<br>• Quick Skips (linear) (T1)<br>• "Running Tall" cues</td>
-                            <td align="left" data-details-file="p1_elem_day4.md" data-label="Day 4 Focus"><strong>General Strength/Mobility:</strong><br>• Forward/Backward Jump & Stick (T1)<br>• Animal Walks (Bear Crawl, etc.)<br>• Pillars (T1)</td>
-                            <td align="left" data-details-file="p1_elem_day5.md" data-label="Day 5 Focus"><strong>Active Recovery/Skill Review:</strong><br>• Line Drills (T1)<br>• Carioca (T2)<br>• Skill-based Tag Game</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-1-cell repeated-phase" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Sprint-Jump (LJ/TJ)</strong></td>
-                            <td align="left" data-details-file="p1_sec_sprintjump_day1.md" data-label="Day 1 Focus"><strong>Accel/Power Foundation:</strong><br>• Falling Runs (T1)<br>• Bounding (T1)<br>• Tuck Jumps (low volume) (T1)</td>
-                            <td align="left" data-details-file="p1_sec_sprintjump_day2.md" data-label="Day 2 Focus"><strong>Aerobic Base/Tempo:</strong><br>• Speed Endurance Drill (E1)<br>(e.g., 2x80, 2x100m @ 75%)</td>
-                            <td align="left" data-details-file="p1_sec_sprintjump_day3.md" data-label="Day 3 Focus"><strong>Technical Skill 1 (Approach):</strong><br>• Rhythm High Knees Drill (E1)<br>• Approach & Thrust Drill (E1)</td>
-                            <td align="left" data-details-file="p1_sec_sprintjump_day4.md" data-label="Day 4 Focus"><strong>General Strength/Mobility:</strong><br>• Bodyweight Circuit: Squats, Lunges<br>• Core: V-Sits, Supermans (T1)</td>
-                            <td align="left" data-details-file="p1_sec_sprintjump_day5.md" data-label="Day 5 Focus"><strong>Active Recovery/Skill 2 (Sprints):</strong><br>• A-March Drill (E1)<br>• Step Over Drill (jogging) (T1)<br>• Drop Skip (T1)</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-1-cell repeated-phase" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Sprinters</strong></td>
-                            <td align="left" data-details-file="p1_sec_sprint_day1.md" data-label="Day 1 Focus"><strong>Acceleration Foundation:</strong><br>• Falling Runs (T1)<br>• Let Go's (partner resisted) (T1)</td>
-                            <td align="left" data-details-file="p1_sec_sprint_day2.md" data-label="Day 2 Focus"><strong>General Endurance/Tempo:</strong><br>• Speed Endurance Drill (E1)<br>(8-10x150m @ 65% on field)</td>
-                            <td align="left" data-details-file="p1_sec_sprint_day3.md" data-label="Day 3 Focus"><strong>Max Velocity Mechanics:</strong><br>• Burst and Relax Drill (E1)<br>(20m sprint/20m float/20m sprint)</td>
-                            <td align="left" data-details-file="p1_sec_sprint_day4.md" data-label="Day 4 Focus"><strong>General Strength/Mobility:</strong><br>• Plyo: Lateral Jump & Stick (T1)<br>• Core: Full Circuit (Pillars, V-Sits)</td>
-                            <td align="left" data-details-file="p1_sec_sprint_day5.md" data-label="Day 5 Focus"><strong>Active Recovery/Drill Refine:</strong><br>• A-March Drill (E1)<br>• Carioca (T2)<br>• Hurdle mobility (no hurdles)</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-1-cell repeated-phase" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Mid-Distance</strong></td>
-                            <td align="left" data-details-file="p1_sec_middist_day1.md" data-label="Day 1 Focus"><strong>Aerobic Base:</strong><br>• 20-30 min easy run on road/field</td>
-                            <td align="left" data-details-file="p1_sec_middist_day2.md" data-label="Day 2 Focus"><strong>Speed Dev & Hills:</strong><br>• Short Hill Sprints (10-15 sec)<br>• Full recovery walk down</td>
-                            <td align="left" data-details-file="p1_sec_middist_day3.md" data-label="Day 3 Focus"><strong>Aerobic Power:</strong><br>• Flying Bears Drill (E1)<br>(100m strong/50m jog repeats)</td>
-                            <td align="left" data-details-file="p1_sec_middist_day4.md" data-label="Day 4 Focus"><strong>General Strength & Core:</strong><br>• Bodyweight Circuit: Squats, Lunges<br>• Pillars, Side Pillars, Leg Lifts (T2)</td>
-                            <td align="left" data-details-file="p1_sec_middist_day5.md" data-label="Day 5 Focus"><strong>Active Recovery & Form:</strong><br>• Easy run<br>• Fast Leg Run drill (T1)</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-1-cell repeated-phase" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Long-Distance</strong></td>
-                            <td align="left" data-details-file="p1_sec_longdist_day1.md" data-label="Day 1 Focus"><strong>Aerobic Base:</strong><br>• 25-35 min easy run on road/field</td>
-                            <td align="left" data-details-file="p1_sec_longdist_day2.md" data-label="Day 2 Focus"><strong>Running Economy & Hills:</strong><br>• Cross Country Run Drill (E1)<br>(Find a hilly route)</td>
-                            <td align="left" data-details-file="p1_sec_longdist_day3.md" data-label="Day 3 Focus"><strong>Aerobic Threshold:</strong><br>• Keep the Pace Drill (E1)<br>(Run continuously for 20 min)</td>
-                            <td align="left" data-details-file="p1_sec_longdist_day4.md" data-label="Day 4 Focus"><strong>General Strength/Mobility:</strong><br>• Bodyweight Circuit<br>• Balance Pick Up Game (T2)</td>
-                            <td align="left" data-details-file="p1_sec_longdist_day5.md" data-label="Day 5 Focus"><strong>Long Run Foundation:</strong><br>• 40-50 min long, slow run</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-1-cell repeated-phase" data-label="Phase"><strong>P1: GPP</strong> (Wk 1-2)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Throwers</strong></td>
-                            <td align="left" data-details-file="p1_sec_throw_day1.md" data-label="Day 1 Focus"><strong>Foundational Strength (Bodywt):</strong><br>• Tuck Jumps (T1)<br>• Push-ups<br>• Bodyweight Squats</td>
-                            <td align="left" data-details-file="p1_sec_throw_day2.md" data-label="Day 2 Focus"><strong>Rotational Power & Drills:</strong><br>• Bowling Release Drill (E1)<br>• Standing Release Drill (E1)</td>
-                            <td align="left" data-details-file="p1_sec_throw_day3.md" data-label="Day 3 Focus"><strong>Full Throw Technique:</strong><br>• Pivoting Drill (no discus first) (E1)<br>• Left Leg Start Drill (E1)</td>
-                            <td align="left" data-details-file="p1_sec_throw_day4.md" data-label="Day 4 Focus"><strong>Strength & Mobility:</strong><br>• Backward Jump & Stick (T1)<br>• Supermans (for back strength) (T1)</td>
-                            <td align="left" data-details-file="p1_sec_throw_day5.md" data-label="Day 5 Focus"><strong>Active Recovery/Coordination:</strong><br>• Overhead Basketball Throw (E1) (use soccer/volleyball)<br>• Stretching</td>
-                        </tr>
-                        <tr>
-                            <td align="left" id="phase2-spp" class="phase-2-cell" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Elementary Sprinters</strong></td>
-                            <td align="left" data-details-file="p2_elem_day1.md" data-label="Day 1 Focus"><strong>Acceleration Development:</strong><br>• 3-Point Starts to 20m<br>• Get Ups (from push-up pos.) (T1)</td>
-                            <td align="left" data-details-file="p2_elem_day2.md" data-label="Day 2 Focus"><strong>Speed Endurance Foundation:</strong><br>• "Cut-Down" Sprints on field<br>(e.g., 80m-60m-40m)</td>
-                            <td align="left" data-details-file="p2_elem_day3.md" data-label="Day 3 Focus"><strong>Max Velocity Application:</strong><br>• Burst and Relax Drill (E1)<br>(15m sprint/15m float/15m sprint)</td>
-                            <td align="left" data-details-file="p2_elem_day4.md" data-label="Day 4 Focus"><strong>Intro to Plyos/Power:</strong><br>• Standing Long Jumps<br>• Line Drills (lateral & F/B) (T1)</td>
-                            <td align="left" data-details-file="p2_elem_day5.md" data-label="Day 5 Focus"><strong>Pre-Meet Simulation:</strong><br>• Mock meet on field<br>(40m dash, SLJ)</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-2-cell repeated-phase" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Sprint-Jump (LJ/TJ)</strong></td>
-                            <td align="left" data-details-file="p2_sec_sprintjump_day1.md" data-label="Day 1 Focus"><strong>Max Velocity & Power:</strong><br>• Increase Acceleration Drill (E1)<br>• Box Drops (on ledge/bench) (T1)</td>
-                            <td align="left" data-details-file="p2_sec_sprintjump_day2.md" data-label="Day 2 Focus"><strong>Speed Endurance:</strong><br>• Interval Sprints Drill (E1)<br>(e.g., 3-4x200m @ 85%)</td>
-                            <td align="left" data-details-file="p2_sec_sprintjump_day3.md" data-label="Day 3 Focus"><strong>Event-Specific Tech (Jumps):</strong><br>• <strong>LJ Day:</strong> Heel Pops, In-Flight Cycle (E1)<br>• <strong>TJ Day:</strong> Multiple Cone Hops (E1)</td>
-                            <td align="left" data-details-file="p2_sec_sprintjump_day4.md" data-label="Day 4 Focus"><strong>Event-Specific Strength:</strong><br>• Depth Jumps (from low box) (T1)<br>• Quarter Eagles (T2)</td>
-                            <td align="left" data-details-file="p2_sec_sprintjump_day5.md" data-label="Day 5 Focus"><strong>Event-Specific Tech (Sprints):</strong><br>• Block Start Intervals (from 3-pt) (E1)<br>• 10m, 20m, 30m starts</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-2-cell repeated-phase" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Sprinters</strong></td>
-                            <td align="left" data-details-file="p2_sec_sprint_day1.md" data-label="Day 1 Focus"><strong>Acceleration & Power:</strong><br>• Block Start Intervals (3-pt) (E1)<br>• Partner Resisted Runs (T2)</td>
-                            <td align="left" data-details-file="p2_sec_sprint_day2.md" data-label="Day 2 Focus"><strong>Speed Endurance/Lactate:</strong><br>• Interval Sprints Drill (E1)<br>(Reps of 150m-300m @ >85%)</td>
-                            <td align="left" data-details-file="p2_sec_sprint_day3.md" data-label="Day 3 Focus"><strong>Maximum Velocity:</strong><br>• Increase Acceleration Drill (E1)<br>(Focus on last 50m of a 100m)</td>
-                            <td align="left" data-details-file="p2_sec_sprint_day4.md" data-label="Day 4 Focus"><strong>Event-Specific Strength:</strong><br>• Plyo: Bounding, Tuck Jumps (T1)<br>• Core: Slams (no ball, just motion) (T2)</td>
-                            <td align="left" data-details-file="p2_sec_sprint_day5.md" data-label="Day 5 Focus"><strong>Active Recovery & Shakeout:</strong><br>• Light jogging<br>• Linear & Lateral Skips (T2)</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-2-cell repeated-phase" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Mid-Distance</strong></td>
-                            <td align="left" data-details-file="p2_sec_middist_day1.md" data-label="Day 1 Focus"><strong>Aerobic Support:</strong><br>• Moderate run (25-30 min)</td>
-                            <td align="left" data-details-file="p2_sec_middist_day2.md" data-label="Day 2 Focus"><strong>Race Pace / VO2 Max:</strong><br>• 3 Event Running Drill (E1)<br>(Sprint/Stride/Sprint over 400m)</td>
-                            <td align="left" data-details-file="p2_sec_middist_day3.md" data-label="Day 3 Focus"><strong>Lactate Tolerance:</strong><br>• Same Time Drill (E1)<br>(Run 40m, 50m, 60m in same time)</td>
-                            <td align="left" data-details-file="p2_sec_middist_day4.md" data-label="Day 4 Focus"><strong>Strength & Power:</strong><br>• Obstacle Jumps (over cones) (T1)<br>• Linear Run & Stick (T2)</td>
-                            <td align="left" data-details-file="p2_sec_middist_day5.md" data-label="Day 5 Focus"><strong>Active Recovery & Strides:</strong><br>• Easy run + 4-6x strides on field</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-2-cell repeated-phase" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Long-Distance</strong></td>
-                            <td align="left" data-details-file="p2_sec_longdist_day1.md" data-label="Day 1 Focus"><strong>Aerobic Support:</strong><br>• Moderate run (30-40 min)</td>
-                            <td align="left" data-details-file="p2_sec_longdist_day2.md" data-label="Day 2 Focus"><strong>Lactate Threshold:</strong><br>• Tempo Run on road (20-25 min)</td>
-                            <td align="left" data-details-file="p2_sec_longdist_day3.md" data-label="Day 3 Focus"><strong>VO2 Max Intervals:</strong><br>• Interval Sprints Drill (E1)<br>(e.g., 4-5 x 800m @ hard effort)</td>
-                            <td align="left" data-details-file="p2_sec_longdist_day4.md" data-label="Day 4 Focus"><strong>Active Recovery & Drills:</strong><br>• Very easy run or cross-train</td>
-                            <td align="left" data-details-file="p2_sec_longdist_day5.md" data-label="Day 5 Focus"><strong>Long Run with Quality:</strong><br>• Long run w/ last 10 min @ tempo pace</td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-2-cell repeated-phase" data-label="Phase"><strong>P2: SPP</strong> (Wk 3-5)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Secondary Throwers</strong></td>
-                            <td align="left" data-details-file="p2_sec_throw_day1.md" data-label="Day 1 Focus"><strong>Explosive Strength:</strong><br>• Depth Jumps (low box) (T1)<br>• Bounding for distance (T1)</td>
-                            <td align="left" data-details-file="p2_sec_throw_day2.md" data-label="Day 2 Focus"><strong>Event-Specific Power:</strong><br>• Standing Javelin Throw (E1) (use stick)<br>• Obstacle Release Drill (E1) (use cone)</td>
-                            <td align="left" data-details-file="p2_sec_throw_day3.md" data-label="Day 3 Focus"><strong>High-Intensity Throws:</strong><br>• Full throws on field (if safe)<br>• OR 5 Step Approach Drill (E1)</td>
-                            <td align="left" data-details-file="p2_sec_throw_day4.md" data-label="Day 4 Focus"><strong>Max Strength & Core:</strong><br>• One-leg Jumps (T2)<br>• Core Rotation (no ball) (T2)</td>
-                            <td align="left" data-details-file="p2_sec_throw_day5.md" data-label="Day 5 Focus"><strong>Recovery & Technical Refine:</strong><br>• Drills (Pivoting, etc.)<br>• Stretching, visualization</td>
-                        </tr>
-                        <tr>
-                            <td align="left" id="phase3-comp" class="phase-3-cell" data-label="Phase"><strong>P3: Competition</strong> (Wk 6-7)</td>
-                            <td align="left" data-label="Athlete Group"><strong>All Groups (Secondary)</strong></td>
-                            <td align="left" data-details-file="p3_sec_day1.md" data-label="Day 1 Focus"><strong>Race Simulation/Tune-Up:</strong><br>• <strong>Sprints:</strong> 2-3 x 40m @ 95% from 3-pt start<br>• <strong>Jumps:</strong> 3-4 full approaches on runway<br>• <strong>Mid-D:</strong> 2 x 200m @ goal race pace<br>• <strong>Long-D:</strong> 2-3 x 800m @ goal pace<br>• <strong>Throwers:</strong> 4-5 high-quality throws</td>
-                            <td align="left" data-details-file="p3_sec_day2.md" data-label="Day 2 Focus"><strong>Full Recovery:</strong><br>• Off day or very light walk and stretch</td>
-                            <td align="left" data-details-file="p3_sec_day3.md" data-label="Day 3 Focus"><strong>CNS Priming/Sharpening:</strong><br>• Abbreviated warm-up<br>• 2-3 very short, fast efforts (e.g., 20m sprints, a few takeoffs into pit)</td>
-                            <td align="left" data-details-file="p3_sec_day4.md" data-label="Day 4 Focus"><strong>Pre-Meet Shakeout:</strong><br>• Light jog<br>• 2-3 key drills<br>• 2-4 strides</td>
-                            <td align="left" data-details-file="p3_sec_day5.md" data-label="Day 5 Focus"><strong>Competition Day</strong></td>
-                        </tr>
-                        <tr>
-                            <td align="left" class="phase-3-cell repeated-phase" data-label="Phase"><strong>P3: Competition</strong> (Wk 6-7)</td>
-                            <td align="left" data-label="Athlete Group"><strong>Elementary Sprinters</strong></td>
-                            <td align="left" data-details-file="p3_elem_day1.md" data-label="Day 1 Focus"><strong>Race Rehearsal:</strong><br>• 2-3 x 30m Sprints<br>• Focus on perfect form</td>
-                            <td align="left" data-details-file="p3_elem_day2.md" data-label="Day 2 Focus"><strong>Full Recovery:</strong><br>• Off day or light walk</td>
-                            <td align="left" data-details-file="p3_elem_day3.md" data-label="Day 3 Focus"><strong>Neurological Priming:</strong><br>• Short warm-up<br>• 2 x 20m run-ins, feel bouncy</td>
-                            <td align="left" data-details-file="p3_elem_day4.md" data-label="Day 4 Focus"><strong>Pre-Meet Shakeout:</strong><br>• Light jog, review "meet" rules</td>
-                            <td align="left" data-details-file="p3_elem_day5.md" data-label="Day 5 Focus"><strong>Competition Day:</strong><br>• Fun Meet on Field</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="training-board">
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Elementary Sprinters</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_elem_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Acceleration Foundation:</strong><br/>• Falling Runs (T1)<br/>• 3-Point Starts (no blocks)<br/>• 10-20m Sprints</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_elem_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>General Endurance:</strong><br/>• Keep the Pace Drill (E1)<br/>• Frame as a whistle game on a field</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_elem_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Max Velocity Mechanics:</strong><br/>• Step Over Drill (walking) (T1)<br/>• Quick Skips (linear) (T1)<br/>• "Running Tall" cues</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_elem_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>General Strength/Mobility:</strong><br/>• Forward/Backward Jump &amp; Stick (T1)<br/>• Animal Walks (Bear Crawl, etc.)<br/>• Pillars (T1)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_elem_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery/Skill Review:</strong><br/>• Line Drills (T1)<br/>• Carioca (T2)<br/>• Skill-based Tag Game</div></div></div></div>
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Secondary Sprint-Jump (LJ/TJ)</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_sec_sprintjump_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Accel/Power Foundation:</strong><br/>• Falling Runs (T1)<br/>• Bounding (T1)<br/>• Tuck Jumps (low volume) (T1)</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_sec_sprintjump_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Aerobic Base/Tempo:</strong><br/>• Speed Endurance Drill (E1)<br/>(e.g., 2x80, 2x100m @ 75%)</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_sec_sprintjump_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Technical Skill 1 (Approach):</strong><br/>• Rhythm High Knees Drill (E1)<br/>• Approach &amp; Thrust Drill (E1)</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_sec_sprintjump_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>General Strength/Mobility:</strong><br/>• Bodyweight Circuit: Squats, Lunges<br/>• Core: V-Sits, Supermans (T1)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_sec_sprintjump_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery/Skill 2 (Sprints):</strong><br/>• A-March Drill (E1)<br/>• Step Over Drill (jogging) (T1)<br/>• Drop Skip (T1)</div></div></div></div>
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Secondary Sprinters</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_sec_sprint_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Acceleration Foundation:</strong><br/>• Falling Runs (T1)<br/>• Let Go's (partner resisted) (T1)</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_sec_sprint_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>General Endurance/Tempo:</strong><br/>• Speed Endurance Drill (E1)<br/>(8-10x150m @ 65% on field)</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_sec_sprint_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Max Velocity Mechanics:</strong><br/>• Burst and Relax Drill (E1)<br/>(20m sprint/20m float/20m sprint)</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_sec_sprint_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>General Strength/Mobility:</strong><br/>• Plyo: Lateral Jump &amp; Stick (T1)<br/>• Core: Full Circuit (Pillars, V-Sits)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_sec_sprint_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery/Drill Refine:</strong><br/>• A-March Drill (E1)<br/>• Carioca (T2)<br/>• Hurdle mobility (no hurdles)</div></div></div></div>
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Secondary Mid-Distance</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_sec_middist_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Aerobic Base:</strong><br/>• 20-30 min easy run on road/field</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_sec_middist_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Speed Dev &amp; Hills:</strong><br/>• Short Hill Sprints (10-15 sec)<br/>• Full recovery walk down</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_sec_middist_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Aerobic Power:</strong><br/>• Flying Bears Drill (E1)<br/>(100m strong/50m jog repeats)</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_sec_middist_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>General Strength &amp; Core:</strong><br/>• Bodyweight Circuit: Squats, Lunges<br/>• Pillars, Side Pillars, Leg Lifts (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_sec_middist_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery &amp; Form:</strong><br/>• Easy run<br/>• Fast Leg Run drill (T1)</div></div></div></div>
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Secondary Long-Distance</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_sec_longdist_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Aerobic Base:</strong><br/>• 25-35 min easy run on road/field</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_sec_longdist_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Running Economy &amp; Hills:</strong><br/>• Cross Country Run Drill (E1)<br/>(Find a hilly route)</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_sec_longdist_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Aerobic Threshold:</strong><br/>• Keep the Pace Drill (E1)<br/>(Run continuously for 20 min)</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_sec_longdist_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>General Strength/Mobility:</strong><br/>• Bodyweight Circuit<br/>• Balance Pick Up Game (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_sec_longdist_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Long Run Foundation:</strong><br/>• 40-50 min long, slow run</div></div></div></div>
+<div class="training-card" data-phase-id="phase1-gpp"><div class="card-header"><div class="phase-badge phase-1-cell"><strong>P1: GPP</strong> (Wk 1-2)</div><h3 class="group-title">Secondary Throwers</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p1_sec_throw_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Foundational Strength (Bodywt):</strong><br/>• Tuck Jumps (T1)<br/>• Push-ups<br/>• Bodyweight Squats</div></div><div class="day-row" data-day="Day 2" data-details-file="p1_sec_throw_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Rotational Power &amp; Drills:</strong><br/>• Bowling Release Drill (E1)<br/>• Standing Release Drill (E1)</div></div><div class="day-row" data-day="Day 3" data-details-file="p1_sec_throw_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Full Throw Technique:</strong><br/>• Pivoting Drill (no discus first) (E1)<br/>• Left Leg Start Drill (E1)</div></div><div class="day-row" data-day="Day 4" data-details-file="p1_sec_throw_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Strength &amp; Mobility:</strong><br/>• Backward Jump &amp; Stick (T1)<br/>• Supermans (for back strength) (T1)</div></div><div class="day-row" data-day="Day 5" data-details-file="p1_sec_throw_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery/Coordination:</strong><br/>• Overhead Basketball Throw (E1) (use soccer/volleyball)<br/>• Stretching</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Elementary Sprinters</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_elem_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Acceleration Development:</strong><br/>• 3-Point Starts to 20m<br/>• Get Ups (from push-up pos.) (T1)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_elem_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Speed Endurance Foundation:</strong><br/>• "Cut-Down" Sprints on field<br/>(e.g., 80m-60m-40m)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_elem_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Max Velocity Application:</strong><br/>• Burst and Relax Drill (E1)<br/>(15m sprint/15m float/15m sprint)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_elem_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Intro to Plyos/Power:</strong><br/>• Standing Long Jumps<br/>• Line Drills (lateral &amp; F/B) (T1)</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_elem_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Pre-Meet Simulation:</strong><br/>• Mock meet on field<br/>(40m dash, SLJ)</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Secondary Sprint-Jump (LJ/TJ)</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_sec_sprintjump_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Max Velocity &amp; Power:</strong><br/>• Increase Acceleration Drill (E1)<br/>• Box Drops (on ledge/bench) (T1)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_sec_sprintjump_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Speed Endurance:</strong><br/>• Interval Sprints Drill (E1)<br/>(e.g., 3-4x200m @ 85%)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_sec_sprintjump_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Event-Specific Tech (Jumps):</strong><br/>• <strong>LJ Day:</strong> Heel Pops, In-Flight Cycle (E1)<br/>• <strong>TJ Day:</strong> Multiple Cone Hops (E1)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_sec_sprintjump_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Event-Specific Strength:</strong><br/>• Depth Jumps (from low box) (T1)<br/>• Quarter Eagles (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_sec_sprintjump_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Event-Specific Tech (Sprints):</strong><br/>• Block Start Intervals (from 3-pt) (E1)<br/>• 10m, 20m, 30m starts</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Secondary Sprinters</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_sec_sprint_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Acceleration &amp; Power:</strong><br/>• Block Start Intervals (3-pt) (E1)<br/>• Partner Resisted Runs (T2)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_sec_sprint_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Speed Endurance/Lactate:</strong><br/>• Interval Sprints Drill (E1)<br/>(Reps of 150m-300m @ &gt;85%)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_sec_sprint_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Maximum Velocity:</strong><br/>• Increase Acceleration Drill (E1)<br/>(Focus on last 50m of a 100m)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_sec_sprint_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Event-Specific Strength:</strong><br/>• Plyo: Bounding, Tuck Jumps (T1)<br/>• Core: Slams (no ball, just motion) (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_sec_sprint_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery &amp; Shakeout:</strong><br/>• Light jogging<br/>• Linear &amp; Lateral Skips (T2)</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Secondary Mid-Distance</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_sec_middist_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Aerobic Support:</strong><br/>• Moderate run (25-30 min)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_sec_middist_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Race Pace / VO2 Max:</strong><br/>• 3 Event Running Drill (E1)<br/>(Sprint/Stride/Sprint over 400m)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_sec_middist_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Lactate Tolerance:</strong><br/>• Same Time Drill (E1)<br/>(Run 40m, 50m, 60m in same time)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_sec_middist_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Strength &amp; Power:</strong><br/>• Obstacle Jumps (over cones) (T1)<br/>• Linear Run &amp; Stick (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_sec_middist_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Active Recovery &amp; Strides:</strong><br/>• Easy run + 4-6x strides on field</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Secondary Long-Distance</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_sec_longdist_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Aerobic Support:</strong><br/>• Moderate run (30-40 min)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_sec_longdist_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Lactate Threshold:</strong><br/>• Tempo Run on road (20-25 min)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_sec_longdist_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>VO2 Max Intervals:</strong><br/>• Interval Sprints Drill (E1)<br/>(e.g., 4-5 x 800m @ hard effort)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_sec_longdist_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Active Recovery &amp; Drills:</strong><br/>• Very easy run or cross-train</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_sec_longdist_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Long Run with Quality:</strong><br/>• Long run w/ last 10 min @ tempo pace</div></div></div></div>
+<div class="training-card" data-phase-id="phase2-spp"><div class="card-header"><div class="phase-badge phase-2-cell"><strong>P2: SPP</strong> (Wk 3-5)</div><h3 class="group-title">Secondary Throwers</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p2_sec_throw_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Explosive Strength:</strong><br/>• Depth Jumps (low box) (T1)<br/>• Bounding for distance (T1)</div></div><div class="day-row" data-day="Day 2" data-details-file="p2_sec_throw_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Event-Specific Power:</strong><br/>• Standing Javelin Throw (E1) (use stick)<br/>• Obstacle Release Drill (E1) (use cone)</div></div><div class="day-row" data-day="Day 3" data-details-file="p2_sec_throw_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>High-Intensity Throws:</strong><br/>• Full throws on field (if safe)<br/>• OR 5 Step Approach Drill (E1)</div></div><div class="day-row" data-day="Day 4" data-details-file="p2_sec_throw_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Max Strength &amp; Core:</strong><br/>• One-leg Jumps (T2)<br/>• Core Rotation (no ball) (T2)</div></div><div class="day-row" data-day="Day 5" data-details-file="p2_sec_throw_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Recovery &amp; Technical Refine:</strong><br/>• Drills (Pivoting, etc.)<br/>• Stretching, visualization</div></div></div></div>
+<div class="training-card" data-phase-id="phase3-comp"><div class="card-header"><div class="phase-badge phase-3-cell"><strong>P3: Competition</strong> (Wk 6-7)</div><h3 class="group-title">All Groups (Secondary)</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p3_sec_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Race Simulation/Tune-Up:</strong><br/>• <strong>Sprints:</strong> 2-3 x 40m @ 95% from 3-pt start<br/>• <strong>Jumps:</strong> 3-4 full approaches on runway<br/>• <strong>Mid-D:</strong> 2 x 200m @ goal race pace<br/>• <strong>Long-D:</strong> 2-3 x 800m @ goal pace<br/>• <strong>Throwers:</strong> 4-5 high-quality throws</div></div><div class="day-row" data-day="Day 2" data-details-file="p3_sec_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Full Recovery:</strong><br/>• Off day or very light walk and stretch</div></div><div class="day-row" data-day="Day 3" data-details-file="p3_sec_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>CNS Priming/Sharpening:</strong><br/>• Abbreviated warm-up<br/>• 2-3 very short, fast efforts (e.g., 20m sprints, a few takeoffs into pit)</div></div><div class="day-row" data-day="Day 4" data-details-file="p3_sec_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Pre-Meet Shakeout:</strong><br/>• Light jog<br/>• 2-3 key drills<br/>• 2-4 strides</div></div><div class="day-row" data-day="Day 5" data-details-file="p3_sec_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Competition Day</strong></div></div></div></div>
+<div class="training-card" data-phase-id="phase3-comp"><div class="card-header"><div class="phase-badge phase-3-cell"><strong>P3: Competition</strong> (Wk 6-7)</div><h3 class="group-title">Elementary Sprinters</h3></div><div class="card-body"><div class="day-row" data-day="Day 1" data-details-file="p3_elem_day1.md"><span class="day-label">Day 1</span><div class="day-content"><strong>Race Rehearsal:</strong><br/>• 2-3 x 30m Sprints<br/>• Focus on perfect form</div></div><div class="day-row" data-day="Day 2" data-details-file="p3_elem_day2.md"><span class="day-label">Day 2</span><div class="day-content"><strong>Full Recovery:</strong><br/>• Off day or light walk</div></div><div class="day-row" data-day="Day 3" data-details-file="p3_elem_day3.md"><span class="day-label">Day 3</span><div class="day-content"><strong>Neurological Priming:</strong><br/>• Short warm-up<br/>• 2 x 20m run-ins, feel bouncy</div></div><div class="day-row" data-day="Day 4" data-details-file="p3_elem_day4.md"><span class="day-label">Day 4</span><div class="day-content"><strong>Pre-Meet Shakeout:</strong><br/>• Light jog, review "meet" rules</div></div><div class="day-row" data-day="Day 5" data-details-file="p3_elem_day5.md"><span class="day-label">Day 5</span><div class="day-content"><strong>Competition Day:</strong><br/>• Fun Meet on Field</div></div></div></div>
+</div>
         </div>
 
         <hr>
@@ -687,10 +519,6 @@
         document.addEventListener('DOMContentLoaded', function () {
             const totalWeeksInput = document.getElementById('total-weeks');
             const generatePlanBtn = document.getElementById('generate-plan-btn');
-            // Selectors updated to classes
-            const phase1Cell = document.getElementById('phase1-gpp');
-            const phase2Cell = document.getElementById('phase2-spp');
-            const phase3Cell = document.getElementById('phase3-comp');
 
             const calculateAndDisplayPlan = () => {
                 const totalWeeks = parseInt(totalWeeksInput.value, 10);
@@ -711,7 +539,7 @@
                 const p3_start = p2_end + 1;
                 const p3_end = totalWeeks;
 
-                // Update all cells for each phase
+                // Update all cells for each phase using class selectors
                 document.querySelectorAll('.phase-1-cell').forEach(el => {
                     el.innerHTML = `<strong>P1: GPP</strong> (Wk 1-${p1_end})`;
                 });
@@ -723,21 +551,32 @@
                 });
             };
 
-            generatePlanBtn.addEventListener('click', calculateAndDisplayPlan);
+            if (generatePlanBtn) {
+                generatePlanBtn.addEventListener('click', calculateAndDisplayPlan);
+            }
+
             // Initial calculation on page load
             calculateAndDisplayPlan();
 
             const modal = document.getElementById('details-modal');
             const modalBody = document.getElementById('modal-body-content');
             const closeButton = document.querySelector('.close-button');
-            const tableContainer = document.querySelector('.table-container');
+            const trainingBoard = document.querySelector('.training-board');
 
             // Function to open the modal and fetch content
-            const openModal = (cell) => {
-                const fileName = cell.getAttribute('data-details-file');
+            const openModal = (element) => {
+                const fileName = element.getAttribute('data-details-file');
+
                 if (!fileName) return;
 
                 const filePath = `details-v2/${fileName}`;
+
+                // Show loading state
+                modalBody.innerHTML = '<div style="text-align:center; padding:20px; color:#666;">Loading details...</div>';
+                modal.style.display = 'block';
+
+                // Disable body scroll when modal is open
+                document.body.style.overflow = 'hidden';
 
                 fetch(filePath)
                     .then(response => {
@@ -748,12 +587,13 @@
                     })
                     .then(markdown => {
                         modalBody.innerHTML = marked.parse(markdown);
-                        modal.style.display = 'block';
                     })
                     .catch(error => {
                         console.error('Error fetching details:', error);
-                        modalBody.innerHTML = `<p>Could not load details. Please ensure the file <code>${filePath}</code> exists.</p>`;
-                        modal.style.display = 'block';
+                        modalBody.innerHTML = `<div style="text-align:center; color:#e74c3c;">
+                            <h3>Error Loading Details</h3>
+                            <p>Could not load content from <code>${filePath}</code>.</p>
+                        </div>`;
                     });
             };
 
@@ -761,14 +601,17 @@
             const closeModal = () => {
                 modal.style.display = 'none';
                 modalBody.innerHTML = ''; // Clear content
+                // Re-enable body scroll
+                document.body.style.overflow = '';
             };
 
-            // Event listener for table clicks
-            if (tableContainer) {
-                tableContainer.addEventListener('click', function (event) {
-                    const targetCell = event.target.closest('td');
-                    if (targetCell && targetCell.hasAttribute('data-details-file')) {
-                        openModal(targetCell);
+            // Event listener for board clicks (delegation)
+            if (trainingBoard) {
+                trainingBoard.addEventListener('click', function (event) {
+                    // Look for closest .day-row or element with data-details-file
+                    const targetRow = event.target.closest('.day-row');
+                    if (targetRow && targetRow.hasAttribute('data-details-file')) {
+                        openModal(targetRow);
                     }
                 });
             }
@@ -781,6 +624,13 @@
             // Event listener to close modal when clicking outside of it
             window.addEventListener('click', function (event) {
                 if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === "Escape" && modal.style.display === "block") {
                     closeModal();
                 }
             });
