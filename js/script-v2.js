@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const phase2Cell = document.getElementById('phase2-spp');
     const phase3Cell = document.getElementById('phase3-comp');
 
+    // Optimization: Cache redundant DOM queries
+    const phase1Cells = document.querySelectorAll('.phase-1-cell');
+    const phase2Cells = document.querySelectorAll('.phase-2-cell');
+    const phase3Cells = document.querySelectorAll('.phase-3-cell');
+
     const calculateAndDisplayPlan = () => {
         const totalWeeks = parseInt(totalWeeksInput.value, 10);
         if (isNaN(totalWeeks) || totalWeeks < 7) {
@@ -26,13 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const p3_end = totalWeeks;
 
         // Update all cells for each phase
-        document.querySelectorAll('.phase-1-cell').forEach(el => {
+        phase1Cells.forEach(el => {
             el.innerHTML = `<strong>P1: GPP</strong> (Wk 1-${p1_end})`;
         });
-        document.querySelectorAll('.phase-2-cell').forEach(el => {
+        phase2Cells.forEach(el => {
             el.innerHTML = `<strong>P2: SPP</strong> (Wk ${p2_start}-${p2_end})`;
         });
-        document.querySelectorAll('.phase-3-cell').forEach(el => {
+        phase3Cells.forEach(el => {
             el.innerHTML = `<strong>P3: Competition</strong> (Wk ${p3_start}-${p3_end})`;
         });
     };
@@ -45,11 +50,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalBody = document.getElementById('modal-body-content');
     const closeButton = document.querySelector('.close-button');
     const tableContainer = document.querySelector('.table-container');
+    const contentCache = {};
 
     // Function to open the modal and fetch content
     const openModal = (cell) => {
         const fileName = cell.getAttribute('data-details-file');
         if (!fileName) return;
+
+        if (contentCache[fileName]) {
+            modalBody.innerHTML = contentCache[fileName];
+            modal.style.display = 'block';
+            return;
+        }
 
         const filePath = `details-v2/${fileName}`;
 
@@ -61,7 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 return response.text();
             })
             .then(markdown => {
-                modalBody.innerHTML = marked.parse(markdown);
+                const html = marked.parse(markdown);
+                contentCache[fileName] = html;
+                modalBody.innerHTML = html;
                 modal.style.display = 'block';
             })
             .catch(error => {
